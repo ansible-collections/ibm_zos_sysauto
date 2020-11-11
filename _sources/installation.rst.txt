@@ -62,7 +62,7 @@ having to use Galaxy. Then you can use the ``ansible-galaxy collection install``
 
    .. code-block:: sh
 
-      $ git clone git@github.ibm.com:SystemAutomation/ibm_zos_sysauto.git
+      $ git clone git@github.com:ansible-collections/ibm_zos_sysauto.git
 
 2. Run a local build inside the collection:
 

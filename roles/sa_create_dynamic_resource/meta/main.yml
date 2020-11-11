@@ -1,0 +1,25 @@
+---
+# Copyright (c) IBM Corporation 2020
+
+galaxy_info:
+  author: Anke Luedde
+  description: Create and resume a new dynamic resource instance from a template in an IBM Z System Automation environment.
+  company: IBM
+
+  platforms:
+    - name: GenericLinux
+      versions:
+      - all
+
+  license: Apache-2.0
+
+  min_ansible_version: 2.9
+
+  galaxy_tags:
+    - ibm
+    - z
+    - zos
+    - systemautomation
+    - sysauto
+
+dependencies: []

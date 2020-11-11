@@ -1,0 +1,25 @@
+---
+# Copyright (c) IBM Corporation 2020
+
+galaxy_info:
+  author: Anke Luedde
+  description: Delete a dynamic resource instance from the list of automated instances in IBM Z System Automation environment.
+  company: IBM
+
+  platforms:
+    - name: GenericLinux
+      versions:
+      - all
+
+  license: Apache-2.0
+
+  min_ansible_version: 2.9
+
+  galaxy_tags:
+    - ibm
+    - z
+    - zos
+    - systemautomation
+    - sysauto
+
+dependencies: []

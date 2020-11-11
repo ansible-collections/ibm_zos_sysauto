@@ -1,23 +1,53 @@
-# See https://docs.ansible.com/ansible/latest/dev_guide/collections_galaxy_meta.html
+# Copyright (c) IBM Corporation 2020
 
-namespace: community
-name: FIXME
-version: 0.1.0
+# IBM collection namespace
+namespace: ibm
+
+# IBM Z System Automation collection
+name: ibm_zos_sysauto
+
+# The version of the collection.
+version: 0.0.1
+
+# Collection README file
 readme: README.md
+
+# Contributors
 authors:
-  - YOUR NAME (github.com/YOURGITHUB)
-description: null
-license_file: COPYING
+  - "Anke Luedde"
+
+# A short summary description of the collection
+description: The IBM Z System Automation collection includes roles and sample playbooks to access the IBM System Automation Operations REST server.
+
+# This collection is licensed under Apache License, Version 2.0
+license:
+- "Apache-2.0"
+
+# Tags
 tags:
-# tags so people can search for collections https://galaxy.ansible.com/search
-# tags are all lower-case, no spaces, no dashes.
-  - example1
-  - example2
-repository: https://github.com/ansible-collections/community.REPO_NAME
-#documentation: https://github.com/ansible-collection-migration/community.REPO_NAME/tree/main/docs
-homepage: https://github.com/ansible-collections/community.REPO_NAME
-issues: https://github.com/ansible-collections/community.REPO_NAME/issues
-build_ignore:
-# https://docs.ansible.com/ansible/devel/dev_guide/developing_collections.html#ignoring-files-and-folders
-  - .gitignore
-  - changelogs/.plugin-cache.yaml
+  - ibm
+  - z
+  - zos
+  - z_os
+  - mvs
+  - zos_systemsysauto
+  - zos_system_sysauto
+  - zos_sa
+  - ibm_zos_sa
+  - system_automation
+  - ims
+  - liberty
+  - was
+
+# The URL of the originating SCM repository
+repository: https://github.com/ansible-collections/ibm_zos_sysauto
+
+# The URL to any online docs
+# TODO: correct link, when in github
+documentation: http://docs.example.com
+
+# The URL to the homepage of the collection/project
+homepage: https://www.ibm.com/products/z-system-sysauto
+
+# The URL to the collection issue tracker
+issues: https://github.com/ansible-collections/ibm_zos_sysauto/issues

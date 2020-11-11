@@ -1,0 +1,40 @@
+---
+# Copyright (c) IBM Corporation 2020
+
+# tasks file for role sa_delete_dynamic_resource
+
+- name: "GET resources filtered by name (subsystem), system and dynamic=true"
+  uri:
+    url: "{{ sa_service_protocol }}://{{ sa_service_hostname }}:{{ sa_service_port }}/ibm/sa/v1/resources?name={{ subsystem }}&system={{ system }}&dynamic=true"
+    user: "{{ username }}"
+    password: "{{ password }}"
+    validate_certs: no
+    method: GET
+    force_basic_auth: yes
+    status_code: 200
+  delegate_to: localhost
+  register: resources
+  
+- name: "Resource does not exist."
+  debug:
+    msg: "The given resource '{{ subsystem }}' for system '{{ system }}' does not exist."
+  when: (resources.json._embedded is not defined) 
+
+- name: "Fail, if more than one object returned."
+  fail:
+    msg: "The given resource '{{ subsystem }}' for system '{{ system }}' is not unique."
+  when: (resources.json._embedded is defined and resources.json._embedded.resourceSummaryList|length > 1)
+
+- name: "delete the resource"
+  uri:
+    url: "{{ resources.json._embedded.resourceSummaryList[0]._links.self.href }}"
+    user: "{{ username }}"
+    password: "{{ password }}"
+    validate_certs: no
+    method: DELETE
+    force_basic_auth: yes
+    status_code: 204
+  delegate_to: localhost
+  when: resources.json._embedded.resourceSummaryList[0].id is defined
+  
+...

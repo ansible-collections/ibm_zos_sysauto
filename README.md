@@ -16,10 +16,10 @@ Features
 
 The **IBM Z System Automation collection** includes
 [roles](https://github.com/ansible-collections/ibm_zos_sysauto/tree/main/roles/) and
-[sample playbooks](https://github.com/IBM/ibm_zos_sysauto/tree/main/playbooks/)
+[sample playbooks](https://github.com/ansible-collections/ibm_zos_sysauto/tree/main/playbooks/)
 to access the IBM Z System Automation Operations REST API.
 
-For guides and reference, see [Docs Site](https://ibm.github.io/ibm_zos_sysauto/index.html).
+For guides and reference, see [Docs Site](https://github.io/ibm_zos_sysauto/index.html).
 
 
 Copyright

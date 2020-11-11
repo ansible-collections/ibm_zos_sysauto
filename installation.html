@@ -1,0 +1,304 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Installation &mdash; IBM Z System Automation 1.0.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Roles" href="roles.html" />
+    <link rel="prev" title="Requirements" href="requirements.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> IBM Z System Automation
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="requirements.html">Requirements</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#ansible-galaxy">Ansible Galaxy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#local-build">Local Build</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Ansible Content</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="roles.html">Roles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="playbooks.html">Playbooks</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Release Notes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="release_notes.html">Releases</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="community_guides.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">IBM Z System Automation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Installation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/ansible-collections/ibm_zos_sysauto/blob/main/docs/source/installation.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<p>The <strong>IBM Z System Automation collection</strong> can be installed by several options, including Ansible Galaxy and a local build.</p>
+<p>For more information on installing collections, see <a class="reference external" href="https://docs.ansible.com/ansible/latest/user_guide/collections_using.html">Using Collections</a>.</p>
+<div class="section" id="ansible-galaxy">
+<h2>Ansible Galaxy<a class="headerlink" href="#ansible-galaxy" title="Permalink to this headline">¶</a></h2>
+<p>Ansible Galaxy enables you to quickly configure the automation project with content from the Ansible community.
+Galaxy provides prepackaged units of work known as collections.</p>
+<p>The <strong>IBM Z System Automation collection</strong> is distributed through the <a class="reference external" href="https://galaxy.ansible.com/">Ansible Galaxy Community</a>.
+You can use the <a class="reference external" href="https://docs.ansible.com/ansible/latest/cli/ansible-galaxy.html">ansible-galaxy</a> command with the option <code class="docutils literal notranslate"><span class="pre">install</span></code> to install the collection on your control node, as follows:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>$ ansible-galaxy collection install ibm.ibm_zos_sysauto
+</pre></div>
+</div>
+<p>By default, the collection is installed in <code class="docutils literal notranslate"><span class="pre">~/.ansible/collections</span></code>. The output looks like this:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>Process install dependency map
+Starting collection install process
+Installing <span class="s1">&#39;ibm.ibm_zos_sysauto:1.0.0&#39;</span> to <span class="s1">&#39;/Users/user/.ansible/collections/ansible_collections/ibm/ibm_zos_sysauto&#39;</span>
+</pre></div>
+</div>
+<p>To specify the installation path, include the <code class="docutils literal notranslate"><span class="pre">-p</span></code> option with the <a class="reference external" href="https://docs.ansible.com/ansible/latest/cli/ansible-galaxy.html">ansible-galaxy</a> command:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>$ ansible-galaxy collection install ibm.ibm_zos_sysauto -p /myAnsible/collections
+</pre></div>
+</div>
+<p>After installation, the collection content will resemble this hierarchy:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>├── collections/
+│   ├── ansible_collections/
+│       ├── ibm/
+│           ├── ibm_zos_sysauto/
+│               ├── docs/
+│               ├── playbooks/
+│               ├── roles/
+</pre></div>
+</div>
+<p>For more information on installing collections with Ansible Galaxy, see <a class="reference external" href="https://docs.ansible.com/ansible/latest/user_guide/collections_using.html#installing-collections-with-ansible-galaxy">Installing Collections</a>.</p>
+</div>
+<div class="section" id="local-build">
+<h2>Local Build<a class="headerlink" href="#local-build" title="Permalink to this headline">¶</a></h2>
+<p>To build your own collection, you need to clone the Git repository, build the collection archive, and install the locally built collection.
+The <code class="docutils literal notranslate"><span class="pre">ansible-galaxy</span> <span class="pre">collection</span> <span class="pre">build</span></code> command packages the collection into an archive that can later be installed locally without
+having to use Galaxy. Then you can use the <code class="docutils literal notranslate"><span class="pre">ansible-galaxy</span> <span class="pre">collection</span> <span class="pre">install</span></code> command to install the collection built from source.</p>
+<ol class="arabic">
+<li><p>Clone the Git repository:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>$ git clone git@github.ibm.com:SystemAutomation/ibm_zos_sysauto.git
+</pre></div>
+</div>
+</li>
+<li><p>Run a local build inside the collection:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>$ <span class="nb">cd</span> ibm_zos_sysauto
+$ ansible-galaxy collection build
+</pre></div>
+</div>
+<p>The example output looks like this:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>Created collection <span class="k">for</span> ibm.ibm_zos_sysauto at /Users/user/git/ibm/ibm_zos_sysauto/ibm-ibm_zos_sysauto-1.0.0.tar.gz
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>Collection archive names will change depending on the release version.</p></li>
+<li><p>They adhere to this convention <code class="docutils literal notranslate"><span class="pre">&lt;namespace&gt;-&lt;collection&gt;-&lt;version&gt;.tar.gz</span></code>, for example, <code class="docutils literal notranslate"><span class="pre">ibm-ibm_zos_sysauto-1.0.0.tar.gz</span></code>.</p></li>
+</ul>
+</div>
+</li>
+<li><p>Install the locally built collection:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>$ ansible-galaxy collection install ibm-ibm_zos_sysauto-1.0.0.tar.gz
+</pre></div>
+</div>
+<p>The example output looks like this:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>Process install dependency map
+Starting collection install process
+Installing <span class="s1">&#39;ibm.ibm_zos_sysauto:1.0.0&#39;</span> to <span class="s1">&#39;/Users/user/.ansible/collections/ansible_collections/ibm/ibm_zos_sysauto&#39;</span>
+</pre></div>
+</div>
+<p>To specify the installation path, include the <code class="docutils literal notranslate"><span class="pre">-p</span></code> option with the <a class="reference external" href="https://docs.ansible.com/ansible/latest/cli/ansible-galaxy.html">ansible-galaxy</a> command:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>$ ansible-galaxy collection install ibm-ibm_zos_sysauto-1.0.0.tar.gz -p /myAnsible/collections
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="roles.html" class="btn btn-neutral float-right" title="Roles" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="requirements.html" class="btn btn-neutral float-left" title="Requirements" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, IBM
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

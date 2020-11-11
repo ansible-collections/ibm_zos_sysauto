@@ -10,7 +10,7 @@
   hosts: sampleHost1
   gather_facts: no
   collections:
-    - ibm.ibm_zos_automation
+    - ibm.ibm_zos_sysauto
   vars_files:
     - ./vars/vars.yaml
   vars_prompt:

@@ -14,7 +14,7 @@
     status_code: 200
   delegate_to: localhost
   register: resources
-  
+
 - name: "Resource does not exist."
   debug:
     msg: "The given resource '{{ subsystem }}' for system '{{ system }}' does not exist."
@@ -36,5 +36,4 @@
     status_code: 204
   delegate_to: localhost
   when: resources.json._embedded.resourceSummaryList[0].id is defined
-  
 ...

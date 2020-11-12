@@ -19,7 +19,7 @@
   fail:
     msg: "The given template '{{ templateName }}' is not unique or does not exist."
   when: (templates.json._embedded is not defined or templates.json._embedded.templateList|length != 1)
-      
+
 - name: "create dynamic resource"
   uri:
     url: "{{ sa_service_protocol }}://{{ sa_service_hostname }}:{{ sa_service_port }}/ibm/sa/v1/resources"
@@ -44,7 +44,7 @@
   delegate_to: localhost
   register: createres
   when: templates.json._embedded.templateList[0].id is defined
-  
+
 # previous request return either 201 and a location (registered in createres) --> OK continue
 # or 409 and no location --> OK continue (but resume is skipped)
 # or any other error --> previous task and any further task is failing
@@ -52,7 +52,7 @@
   debug:
     msg: "Resource already exists."
   when: (createres.location is undefined)  
-  
+
 - name: "resume the resource"
   uri:
     url: "{{ createres.location }}/resume"

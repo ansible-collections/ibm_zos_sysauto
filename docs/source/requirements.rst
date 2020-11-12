@@ -21,7 +21,7 @@ Managed node
 The **Managed node** is often referred to as a target node, or host, and is the node that is managed by Ansible.
 Ansible does not need to be installed on a managed node.
 
-* `IBM Z System Automation`_: V4.2 with PTF for SPE APAR OA59461 or later
+* `IBM Z System Automation`_: V4.2 with PTF for SPE APAR OA59461 applied.
 
    The `IBM Z System Automation Operations REST server`_ must be installed, configured and running on **at least one** z/OS system in an SA-Plex
    where the managed node runs in. Information about the IBM Z System Automation Operations REST server can be configured in the `inventory`_ ``hosts`` file

@@ -19,7 +19,7 @@ The **IBM Z System Automation collection** includes
 [sample playbooks](https://github.com/ansible-collections/ibm_zos_sysauto/tree/main/playbooks/)
 to access the IBM Z System Automation Operations REST API.
 
-For guides and reference, see [Docs Site](https://github.io/ibm_zos_sysauto/index.html).
+For guides and reference, see [Docs Site](https://ansible-collections.github.io/ibm_zos_sysauto/index.html).
 
 
 Copyright

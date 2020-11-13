@@ -7,7 +7,7 @@ namespace: ibm
 name: ibm_zos_sysauto
 
 # The version of the collection.
-version: 0.0.2
+version: 0.0.3
 
 # Collection README file
 readme: README.md
@@ -17,7 +17,7 @@ authors:
   - "Anke Luedde"
 
 # A short summary description of the collection
-description: The IBM Z System Automation collection includes roles and sample playbooks to access the IBM System Automation Operations REST server.
+description: The IBM Z System Automation collection includes roles and sample playbooks to access the IBM Z System Automation Operations REST server.
 
 # This collection is licensed under Apache License, Version 2.0
 license:
@@ -30,14 +30,9 @@ tags:
   - zos
   - z_os
   - mvs
-  - zos_systemsysauto
-  - zos_system_sysauto
   - zos_sa
   - ibm_zos_sa
   - system_automation
-  - ims
-  - liberty
-  - was
 
 # The URL of the originating SCM repository
 repository: https://github.com/ansible-collections/ibm_zos_sysauto

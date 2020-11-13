@@ -3,7 +3,7 @@ IBM Z System Automation collection
 
 The **IBM Z System Automation collection**, also represented as **ibm_zos_sysauto** in this document,
 consists of roles and sample playbooks that you can use with the
-[operations REST server component](https://www.ibm.com/support/knowledgecenter/de/SSWRCJ_4.2.0/com.ibm.safos.doc_4.2/Integrating.html)
+[Operations REST server component](https://www.ibm.com/support/knowledgecenter/de/SSWRCJ_4.2.0/com.ibm.safos.doc_4.2/Integrating.html)
 of IBM Z System Automation.
 
 This collection allows Ansible to create and delete [dynamic resources](https://www.ibm.com/support/knowledgecenter/de/SSWRCJ_4.2.0/com.ibm.safos.doc_4.2/UserGuide/Dynamic_Resources.html)

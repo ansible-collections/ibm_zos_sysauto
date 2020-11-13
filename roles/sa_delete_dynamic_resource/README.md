@@ -4,7 +4,7 @@ sa_delete_dynamic_resource
 The **IBM Z System Automation collection** provides an Ansible role, referred to as **sa_delete_dynamic_resource**, to delete
 a [dynamic resource](https://www.ibm.com/support/knowledgecenter/de/SSWRCJ_4.2.0/com.ibm.safos.doc_4.2/UserGuide/Dynamic_Resources.html#concept_kmr_r4p_4jb) instance.
 
-For guides and reference, see [Docs Site](https://pages.github.ibm.com/SystemAutomation/ibm_zos_sysauto/roles/sa_delete_dynamic_resource.html).
+For guides and reference, see [Docs Site](https://ansible-collections.github.io/ibm_zos_sysauto/roles/sa_delete_dynamic_resource.html).
 
 
 License

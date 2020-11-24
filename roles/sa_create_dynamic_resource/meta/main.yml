@@ -2,7 +2,7 @@
 # Copyright (c) IBM Corporation 2020
 
 galaxy_info:
-  author: Anke Luedde
+  author: Anke Luedde <lueddea@de.ibm.com>
   description: Create and resume a new dynamic resource instance from a template in an IBM Z System Automation environment.
   company: IBM
 

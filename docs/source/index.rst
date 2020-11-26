@@ -30,10 +30,9 @@ Red Hat® Ansible Certified Content for IBM Z, is available on Galaxy as communi
 
 
 Please note: It is IBM's intention to further test and certify the **IBM Z System Automation collection**
-once more testing and community feedback is provided.*
+once more testing and community feedback is provided\*.
 
-*Statements regarding IBM's future direction and intent are subject to change or withdrawal without notice,
-and represent goals and objectives only.
+\*Statements regarding IBM's future direction and intent are subject to change or withdrawal without notice, and represent goals and objectives only.
 
 
 Features

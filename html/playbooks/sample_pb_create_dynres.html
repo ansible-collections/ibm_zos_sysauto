@@ -1,0 +1,256 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>sample_pb_create_dynres &mdash; IBM Z System Automation 1.0.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="sample_pb_delete_dynres" href="sample_pb_delete_dynres.html" />
+    <link rel="prev" title="Playbooks" href="../playbooks.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> IBM Z System Automation
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../requirements.html">Requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Ansible Content</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../roles.html">Roles</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../playbooks.html">Playbooks</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../playbooks.html#ansible-configuration">Ansible Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../playbooks.html#inventory">Inventory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../playbooks.html#host-vars">Host Vars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../playbooks.html#variables">Variables</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../playbooks.html#sample-playbooks">Sample Playbooks</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">sample_pb_create_dynres</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sample_pb_delete_dynres.html">sample_pb_delete_dynres</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../playbooks.html#run-the-playbooks">Run the Playbooks</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Release Notes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../release_notes.html">Releases</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../community_guides.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license.html">License</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">IBM Z System Automation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../playbooks.html">Playbooks</a> &raquo;</li>
+        
+      <li>sample_pb_create_dynres</li>
+    
+    
+
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="sample-pb-create-dynres">
+<h1>sample_pb_create_dynres<a class="headerlink" href="#sample-pb-create-dynres" title="Permalink to this headline">¶</a></h1>
+<p>For configuration and setup, see <a class="reference external" href="../playbooks.html">Playbook Documentation</a>.</p>
+<p>This <a class="reference external" href="https://github.com/ansible-collections/ibm_zos_sysauto/blob/main/playbooks/sample_pb_create_dynres.yaml">sample playbook</a> shows how to create and resume a dynamic resource using the role <a class="reference external" href="../roles/sa_create_dynamic_resource.html">sa_create_dynamic_resource</a>.</p>
+<p>You are prompted for your NetView credentials during execution of the playbook.</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">create and resume a dynamic resource in SA</span>
+  <span class="nt">hosts</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">sampleHost1</span>
+  <span class="nt">gather_facts</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">no</span>
+  <span class="nt">collections</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">ibm.ibm_zos_sysauto</span>
+  <span class="nt">vars_files</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">./vars/vars.yaml</span>
+      <span class="l l-Scalar l-Scalar-Plain">vars_prompt</span><span class="p p-Indicator">:</span>
+    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">username</span>
+      <span class="nt">prompt</span><span class="p">:</span> <span class="s">&quot;Enter</span><span class="nv"> </span><span class="s">your</span><span class="nv"> </span><span class="s">username&quot;</span>
+      <span class="nt">private</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">no</span>
+
+    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">password</span>
+      <span class="nt">prompt</span><span class="p">:</span> <span class="s">&quot;Enter</span><span class="nv"> </span><span class="s">your</span><span class="nv"> </span><span class="s">password&quot;</span>
+      <span class="nt">private</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">yes</span>
+  <span class="nt">tasks</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="nt">include_role</span><span class="p">:</span>
+        <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">sa_create_dynamic_resource</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The inventory file <a class="reference external" href="https://github.com/ansible-collections/ibm_zos_sysauto/blob/main/playbooks/hosts">hosts</a> and host vars (<a class="reference external" href="https://github.com/ansible-collections/ibm_zos_sysauto/blob/main/playbooks/host_vars/sampleHost1.yaml">sampleHost1.yaml</a>) need to be updated to identify the
+target IBM Z System Automation Operations REST server end points.
+For more details refer to the documentation of <a class="reference external" href="../playbooks.html#inventory">inventory</a> and <a class="reference external" href="../playbooks.html#host-vars">host vars</a>.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="sample_pb_delete_dynres.html" class="btn btn-neutral float-right" title="sample_pb_delete_dynres" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../playbooks.html" class="btn btn-neutral float-left" title="Playbooks" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, IBM
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

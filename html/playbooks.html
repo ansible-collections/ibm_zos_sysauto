@@ -1,0 +1,341 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Playbooks &mdash; IBM Z System Automation 1.0.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="sample_pb_create_dynres" href="playbooks/sample_pb_create_dynres.html" />
+    <link rel="prev" title="sa_delete_dynamic_resource" href="roles/sa_delete_dynamic_resource.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> IBM Z System Automation
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="requirements.html">Requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Ansible Content</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="roles.html">Roles</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Playbooks</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#ansible-configuration">Ansible Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#inventory">Inventory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#host-vars">Host Vars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#variables">Variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sample-playbooks">Sample Playbooks</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="playbooks/sample_pb_create_dynres.html">sample_pb_create_dynres</a></li>
+<li class="toctree-l3"><a class="reference internal" href="playbooks/sample_pb_delete_dynres.html">sample_pb_delete_dynres</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#run-the-playbooks">Run the Playbooks</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Release Notes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="release_notes.html">Releases</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="community_guides.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">IBM Z System Automation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Playbooks</li>
+    
+    
+
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="playbooks">
+<h1>Playbooks<a class="headerlink" href="#playbooks" title="Permalink to this headline">¶</a></h1>
+<p>An <a class="reference external" href="https://docs.ansible.com/ansible/latest/user_guide/playbooks_intro.html#playbooks-intro">Ansible playbook</a> consists of organized instructions that define work for
+a managed node (host) to be managed with Ansible.</p>
+<p>Sample playbooks that demonstrate how to use the collection content are <strong>included</strong>
+in the <strong>IBM Z System Automation collection</strong>. You can find the samples on <a class="reference external" href="https://github.com/ansible-collections/ibm_zos_sysauto/tree/main/playbooks">Github</a> or in the collections playbooks
+directory included with the installation.
+For more information about the collections installation and hierarchy, refer to the <a class="reference external" href="installation.html">Installation</a> documentation of this collection.</p>
+<p>The sample playbooks can be run with the <code class="docutils literal notranslate"><span class="pre">ansible-playbook</span></code> command with some
+modifications to the <strong>inventory</strong>, <strong>ansible.cfg</strong> and variable files.</p>
+<div class="section" id="ansible-configuration">
+<h2>Ansible Configuration<a class="headerlink" href="#ansible-configuration" title="Permalink to this headline">¶</a></h2>
+<p>Ansible configuration file <code class="docutils literal notranslate"><span class="pre">ansible.cfg</span></code> can override nearly all <code class="docutils literal notranslate"><span class="pre">ansible-playbook</span></code> configurations.</p>
+<p>Included in the <a class="reference external" href="https://github.com/ansible-collections/ibm_zos_sysauto/blob/main/playbooks">playbooks directory</a> is a sample <a class="reference external" href="https://github.com/ansible-collections/ibm_zos_sysauto/blob/main/playbooks/ansible.cfg">ansible.cfg</a> that can supplement <code class="docutils literal notranslate"><span class="pre">ansible-playbook</span></code> with a little modification.</p>
+<p>You can modify the following configuration statement to refer to your own installation path for the collection:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">collections_paths = ~/.ansible/collections:/usr/share/ansible/collections</span>
+</pre></div>
+</div>
+<p>For more information about available configurations for <code class="docutils literal notranslate"><span class="pre">ansible.cfg</span></code>, see <a class="reference external" href="https://docs.ansible.com/ansible/latest/reference_appendices/config.html#ansible-configuration-settings-locations">Ansible Configuration Settings</a>.</p>
+</div>
+<div class="section" id="inventory">
+<h2>Inventory<a class="headerlink" href="#inventory" title="Permalink to this headline">¶</a></h2>
+<p>Ansible works with multiple managed nodes (hosts) at the same time, using a list or group of lists known as an <a class="reference external" href="https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html">inventory</a>.
+Once the inventory is defined, you can use <a class="reference external" href="https://docs.ansible.com/ansible/latest/user_guide/intro_patterns.html#intro-patterns">patterns</a> to select the hosts, or groups, you want Ansible to run against.</p>
+<p>Included in the <a class="reference external" href="https://github.com/ansible-collections/ibm_zos_sysauto/blob/main/playbooks">playbooks directory</a> is a sample inventory file <a class="reference external" href="https://github.com/ansible-collections/ibm_zos_sysauto/blob/main/playbooks/hosts">hosts</a> that with little modification
+can be used to manage the target z/OS systems. This inventory file should be included when running the sample playbook.</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="p p-Indicator">[</span><span class="nv">sample</span><span class="p p-Indicator">]</span>
+<span class="l l-Scalar l-Scalar-Plain">sampleHost1</span>
+<span class="l l-Scalar l-Scalar-Plain">sampleHost2</span>
+</pre></div>
+</div>
+<ul>
+<li><p><strong>sample</strong>: An example of host grouping.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>sampleHost1</strong>: Nickname for the target z/OS system. You can modify it to refer to your own z/OS system.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="host-vars">
+<h2>Host Vars<a class="headerlink" href="#host-vars" title="Permalink to this headline">¶</a></h2>
+<p>You can supply host variables in either the inventory file or the separate variable file. Storing separate host and group
+variables files may help you organize your variable values more easily.</p>
+<p>Included in the <a class="reference external" href="https://github.com/ansible-collections/ibm_zos_sysauto/blob/main/playbooks">playbooks directory</a> are variable files in the directory <a class="reference external" href="https://github.com/ansible-collections/ibm_zos_sysauto/blob/main/playbooks/host_vars/">host_vars</a> one for each host nickname (provided in the hosts inventory file).</p>
+<ul>
+<li><p><a class="reference external" href="https://github.com/ansible-collections/ibm_zos_sysauto/blob/main/playbooks/host_vars/sampleHost1.yaml">sampleHost1.yaml</a>: It contains the variables for host <code class="docutils literal notranslate"><span class="pre">sampleHost1</span></code>:</p>
+<blockquote>
+<div><div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">sa_service_hostname</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">your.host.name</span>
+<span class="nt">sa_service_port</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">port_number</span>
+<span class="nt">sa_service_protocol</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">http or https</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><strong>sa_service_hostname</strong>: The value of this property identifies the host name of the IBM Z System Automation Operations REST server.</p></li>
+<li><p><strong>sa_service_port</strong>: The value of this property identifies the port number of the IBM Z System Automation Operations REST server.</p></li>
+<li><p><strong>sa_service_protocol</strong>: The value (http or https) of this property identifies if you have configured your IBM Z System Automation Operations REST server to use SSL.</p></li>
+</ul>
+<p>Refer to the <a class="reference external" href="https://www.ibm.com/support/knowledgecenter/de/SSWRCJ_4.2.0/com.ibm.safos.doc_4.2/InstallPlan/JCL_procedure_embeded.html">configuration</a> of the System Automation Operations REST Server for details about these settings.</p>
+</div></blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="variables">
+<h2>Variables<a class="headerlink" href="#variables" title="Permalink to this headline">¶</a></h2>
+<p>We supply sample variables in a variables file. Storing separate host and variables files may help you organize your variable values more easily.</p>
+<p>Included in the <a class="reference external" href="https://github.com/ansible-collections/ibm_zos_sysauto/blob/main/playbooks">playbooks directory</a> is a sample variables file in the directory <a class="reference external" href="https://github.com/ansible-collections/ibm_zos_sysauto/blob/main/playbooks/vars/">vars</a>.</p>
+<ul>
+<li><p><a class="reference external" href="https://github.com/ansible-collections/ibm_zos_sysauto/blob/main/playbooks/vars/vars.yaml">vars.yaml</a>: It contains the variables for the playbooks:</p>
+<blockquote>
+<div><div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">templateName</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">name_of_the_template</span>
+<span class="nt">subsystem</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">subsystem_name</span>
+<span class="nt">system</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">system_name</span>
+<span class="nt">job</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">jobname</span>
+<span class="c1"># procedure: procedureName</span>
+<span class="c1"># comment: comment</span>
+<span class="c1"># group: group</span>
+<span class="c1"># sdesc: &quot;a short description&quot;</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><strong>templateName</strong>: The value of this property specifies the template name that will be used to create the dynamic resource. This parameter is mandatory.</p></li>
+<li><p><strong>subsystem</strong>: The value of this property specifies the subsystem name of the new resource. This parameter is mandatory.</p></li>
+<li><p><strong>system</strong>: The value of this property specifies the system where the resource will be created. This parameter is mandatory.</p></li>
+<li><p><strong>job</strong>: The value of this property specifies the job name of the new resource. This parameter is mandatory.</p></li>
+<li><p><strong>procedure</strong>: The value of this property specifies the procedure name used by the new resource. This parameter is optional.</p></li>
+<li><p><strong>comment</strong>: The value of this property specifies a comment to be associated with the creation of the new resource. This parameter is optional.</p></li>
+<li><p><strong>group</strong>: The value of this property specifies the automation name of the application group (APG) that will host the new resource. This parameter is optional.</p></li>
+<li><p><strong>sdesc</strong>: The value of this property specifies a short description of the new resource. This parameter is optional.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="sample-playbooks">
+<h2>Sample Playbooks<a class="headerlink" href="#sample-playbooks" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="playbooks/sample_pb_create_dynres.html">sample_pb_create_dynres</a></li>
+<li class="toctree-l1"><a class="reference internal" href="playbooks/sample_pb_delete_dynres.html">sample_pb_delete_dynres</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="run-the-playbooks">
+<h2>Run the Playbooks<a class="headerlink" href="#run-the-playbooks" title="Permalink to this headline">¶</a></h2>
+<p>The sample playbooks must be run from the playbooks directory of the installed collection: <code class="docutils literal notranslate"><span class="pre">~/.ansible/collections/ansible_collections/ibm/ibm_zos_sysauto/playbooks/</span></code></p>
+<p>Use the <a class="reference external" href="https://docs.ansible.com/ansible/latest/cli/ansible-playbook.html">ansible-playbook</a> command to run a sample playbook. The command syntax is:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>$ ansible-playbook <span class="o">[</span>-i hosts<span class="o">]</span> sample_pb_*.yaml
+</pre></div>
+</div>
+<p>for example:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>$ ansible-playbook -i hosts sample_pb_create_dynres.yaml
+</pre></div>
+</div>
+<p>To adjust the logging verbosity, include the <code class="docutils literal notranslate"><span class="pre">-v</span></code> option with <a class="reference external" href="https://docs.ansible.com/ansible/latest/cli/ansible-playbook.html">ansible-playbook</a> command. You can append more letter <code class="docutils literal notranslate"><span class="pre">v</span></code>’s, for example, <code class="docutils literal notranslate"><span class="pre">-v</span></code>, <code class="docutils literal notranslate"><span class="pre">-vv</span></code>, <code class="docutils literal notranslate"><span class="pre">-vvv</span></code>, or <code class="docutils literal notranslate"><span class="pre">-vvvv</span></code>, to obtain more details in case a connection failed.
+Each letter <code class="docutils literal notranslate"><span class="pre">v</span></code> increases the logging verbosity similar to the traditional logging levels, such as INFO, WARN, ERROR, or DEBUG.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="playbooks/sample_pb_create_dynres.html" class="btn btn-neutral float-right" title="sample_pb_create_dynres" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="roles/sa_delete_dynamic_resource.html" class="btn btn-neutral float-left" title="sa_delete_dynamic_resource" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, IBM
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

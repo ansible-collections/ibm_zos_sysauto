@@ -7,10 +7,33 @@ IBM Z System Automation collection
 =================================================
 
 The **IBM Z System Automation collection**, also represented as **ibm_zos_sysauto** in this document,
-consists of roles and sample playbooks that you can use with the `Operations REST server component`_ of IBM Z System Automation.
+is preparing to become a part of the broader offering Red Hat® Ansible Certified Content for IBM Z.
 
-This collection allows Ansible to create and delete `dynamic resources`_ from a template defined in the current active policy
-of an IBM Z System Automation environment. It interacts with IBM Z System Automation with help of its Operations REST API.
+The **IBM Z System Automation collection** consists of roles and sample playbooks that you can use with the
+`Operations REST server component`_ of IBM Z System Automation.
+
+This collection allows Ansible to create and delete `dynamic resources`_
+from a template defined in the current active policy of an IBM Z System Automation environment.
+It interacts with IBM Z System Automation with help of its Operations REST API.
+
+
+Red Hat Ansible Certified Content for IBM Z
+===========================================
+
+Red Hat® Ansible Certified Content for IBM Z provides the ability to connect IBM Z® to clients' wider enterprise
+automation strategy through the Ansible Automation Platform ecosystem.
+This enables development and operations automation on Z through a seamless, unified workflow orchestration with
+configuration management, provisioning, and application deployment in one easy-to-use platform.
+
+The **IBM Z System Automation collection**, as planned to be part of the broader offering
+Red Hat® Ansible Certified Content for IBM Z, is available on Galaxy as community supported.
+
+
+Please note: It is IBM's intention to further test and certify the **IBM Z System Automation collection**
+once more testing and community feedback is provided.*
+
+*Statements regarding IBM's future direction and intent are subject to change or withdrawal without notice,
+and represent goals and objectives only.
 
 
 Features

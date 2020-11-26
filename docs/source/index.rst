@@ -81,7 +81,7 @@ For more information refer to `IBM Z System Automation`_.
    https://opensource.org/licenses/GPL-3.0
 .. _Apache License, Version 2.0:
    https://opensource.org/licenses/Apache-2.0
-.. _operations REST server component:
+.. _Operations REST server component:
    https://www.ibm.com/support/knowledgecenter/de/SSWRCJ_4.2.0/com.ibm.safos.doc_4.2/Integrating.html
 .. _IBM Z System Automation:   
    https://www.ibm.com/products/z-system-automation

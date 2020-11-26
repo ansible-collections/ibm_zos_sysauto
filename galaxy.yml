@@ -14,7 +14,7 @@ readme: README.md
 
 # Contributors
 authors:
-  - "Anke Luedde"
+  - Anke Luedde <lueddea@de.ibm.com>
 
 # A short summary description of the collection
 description: The IBM Z System Automation collection includes roles and sample playbooks to access the IBM Z System Automation Operations REST server.

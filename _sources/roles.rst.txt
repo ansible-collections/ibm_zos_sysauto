@@ -10,9 +10,6 @@ The **IBM Z System Automation collection** contains roles that can be used in a 
 resources in an environment that is automated by `IBM Z System Automation`_. These roles greatly simplify the use of the services provided
 by the IBM Z System Automation Operations REST server in custom playbooks.
 
-Role Reference
-==============
-
 The **IBM Z System Automation collection** provides two roles. Reference material for each role contains documentation on how to
 use certain roles in your playbook.
 

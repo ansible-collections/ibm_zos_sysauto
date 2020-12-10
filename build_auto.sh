@@ -13,16 +13,17 @@ if [ -d "$COLLECTION_PATH" ]; then
     rm -Rf  $COLLECTION_PATH
 fi
 
-echo "An existing dev/build directory will be removed"
+echo "$DEV_BUILD_DIR directory will be removed"
 if [ -d "$DEV_BUILD_DIR" ]; then
     rm -Rf  $DEV_BUILD_DIR
 fi
 
-if [ -f "$DEV_DIR/$COLLECTION_TAR" ]; then
+echo "remove $DEV_DIR/$COLLECTION_NAME/$COLLECTION_TAR"
+if [ -f "$DEV_DIR/$COLLECTION_NAME/$COLLECTION_TAR" ]; then
     rm $DEV_DIR/$COLLECTION_NAME/$COLLECTION_TAR
 fi
 
-echo "copy all necessary files to $DEV_BUILD_DIR"
+echo "copy all necessary files to $DEV_BUILD_DIR/$COLLECTION_NAME"
 mkdir -p $DEV_BUILD_DIR/$COLLECTION_NAME
 cp -r $DEV_DIR/$COLLECTION_NAME/docs $DEV_BUILD_DIR/$COLLECTION_NAME/docs
 cp -r $DEV_DIR/$COLLECTION_NAME/playbooks $DEV_BUILD_DIR/$COLLECTION_NAME/playbooks

@@ -36,3 +36,7 @@ echo "build collection"
 
 echo "install collection"
 /usr/local/bin/ansible-galaxy collection install $DEV_DIR/$COLLECTION_NAME/$COLLECTION_TAR
+
+echo "do sanity test"
+cd $COLLECTION_PATH
+ansible-test sanity

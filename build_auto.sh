@@ -7,6 +7,7 @@
 # COLLECTION_NAME: the name of the collection
 # COLLECTION_PATH: the path to the installed collection
 # COLLECTION_TAR: the name of the tarball
+# TEST_DIR: folder, where you have prepared properties for your tests
 COLLECTION_VERSION=0.0.4
 HOME_DIR=/home/lueddea
 DEV_DIR=$HOME_DIR/dev
@@ -14,6 +15,7 @@ DEV_BUILD_DIR=$DEV_DIR/build
 COLLECTION_NAME=ibm_zos_sysauto
 COLLECTION_PATH=$HOME_DIR/.ansible/collections/ansible_collections/ibm/$COLLECTION_NAME
 COLLECTION_TAR=ibm-$COLLECTION_NAME-$COLLECTION_VERSION.tar.gz
+TEST_DIR=$HOME_DIR/dev/test
 
 echo "The installed collection $COLLECTION_PATH will be removed"
 if [ -d "$COLLECTION_PATH" ]; then
@@ -48,3 +50,17 @@ echo "install collection"
 echo "do sanity test"
 cd $COLLECTION_PATH
 ansible-test sanity
+
+echo "prepare for end to end test"
+cp $TEST_DIR/sampleHost1.yaml $COLLECTION_PATH/playbooks/host_vars/
+cp $TEST_DIR/vars.yaml $COLLECTION_PATH/playbooks/vars/
+
+echo "execute playbooks"
+cd $COLLECTION_PATH/playbooks
+ansible-playbook sample_pb_create_dynres.yaml
+
+ansible-playbook sample_pb_create_dynres.yaml
+
+ansible-playbook sample_pb_delete_dynres.yaml
+
+ansible-playbook sample_pb_delete_dynres.yaml

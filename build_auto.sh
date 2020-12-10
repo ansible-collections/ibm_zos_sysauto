@@ -1,5 +1,12 @@
 #!/bin/bash
 
+# COLLECTION_VERSION: the version must match with the version in galaxy.ymlm, the release notes should match and the git versioning should match
+# HOME_DIR: your $HOME
+# DEV_DIR: the development directory
+# DEV_BUILD_DIR: a folder where all files that should make it into the collection are copied to
+# COLLECTION_NAME: the name of the collection
+# COLLECTION_PATH: the path to the installed collection
+# COLLECTION_TAR: the name of the tarball
 COLLECTION_VERSION=0.0.4
 HOME_DIR=/home/lueddea
 DEV_DIR=$HOME_DIR/dev

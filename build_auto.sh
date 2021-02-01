@@ -9,9 +9,10 @@
 # COLLECTION_TAR: the name of the tarball
 # TEST_DIR: folder, where you have prepared properties for your tests
 COLLECTION_VERSION=0.0.4
-HOME_DIR=/home/lueddea
+HOME_DIR=$HOME
 DEV_DIR=$HOME_DIR/dev
-DEV_BUILD_DIR=$DEV_DIR/build
+#DEV_BUILD_DIR=$DEV_DIR/build
+DEV_BUILD_DIR=$HOME_DIR/build
 COLLECTION_NAME=ibm_zos_sysauto
 COLLECTION_PATH=$HOME_DIR/.ansible/collections/ansible_collections/ibm/$COLLECTION_NAME
 COLLECTION_TAR=ibm-$COLLECTION_NAME-$COLLECTION_VERSION.tar.gz
@@ -42,9 +43,11 @@ cp $DEV_DIR/$COLLECTION_NAME/LICENSE $DEV_BUILD_DIR/$COLLECTION_NAME/
 cp $DEV_DIR/$COLLECTION_NAME/README.md $DEV_BUILD_DIR/$COLLECTION_NAME/
 
 echo "build collection"
+echo "$DEV_BUILD_DIR/$COLLECTION_NAME"
+echo "$DEV_DIR/$COLLECTION_NAME"
 /usr/local/bin/ansible-galaxy collection build $DEV_BUILD_DIR/$COLLECTION_NAME --output-path $DEV_DIR/$COLLECTION_NAME
 
-echo "install collection"
+echo "install collection: $DEV_DIR/$COLLECTION_NAME/$COLLECTION_TAR"
 /usr/local/bin/ansible-galaxy collection install $DEV_DIR/$COLLECTION_NAME/$COLLECTION_TAR
 
 echo "do sanity test"

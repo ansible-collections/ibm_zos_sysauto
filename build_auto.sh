@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 # COLLECTION_VERSION: the version must match with the version in galaxy.ymlm, the release notes should match and the git versioning should match
 # HOME_DIR: your $HOME
@@ -18,18 +19,18 @@ COLLECTION_PATH=$HOME_DIR/.ansible/collections/ansible_collections/ibm/$COLLECTI
 COLLECTION_TAR=ibm-$COLLECTION_NAME-$COLLECTION_VERSION.tar.gz
 TEST_DIR=$HOME_DIR/dev/test
 
-echo "The installed collection $COLLECTION_PATH will be removed"
 if [ -d "$COLLECTION_PATH" ]; then
+    echo "Collection $COLLECTION_PATH is already installed and will be removed."
     rm -Rf  $COLLECTION_PATH
 fi
 
-echo "$DEV_BUILD_DIR directory will be removed"
 if [ -d "$DEV_BUILD_DIR" ]; then
+    echo "$DEV_BUILD_DIR directory will be removed"
     rm -Rf  $DEV_BUILD_DIR
 fi
 
-echo "remove $DEV_DIR/$COLLECTION_NAME/$COLLECTION_TAR"
 if [ -f "$DEV_DIR/$COLLECTION_NAME/$COLLECTION_TAR" ]; then
+    echo "Remove $DEV_DIR/$COLLECTION_NAME/$COLLECTION_TAR"
     rm $DEV_DIR/$COLLECTION_NAME/$COLLECTION_TAR
 fi
 
@@ -52,7 +53,7 @@ echo "install collection: $DEV_DIR/$COLLECTION_NAME/$COLLECTION_TAR"
 
 echo "do sanity test"
 cd $COLLECTION_PATH
-ansible-test sanity
+sudo ansible-test sanity
 
 echo "prepare for end to end test"
 cp $TEST_DIR/sampleHost1.yaml $COLLECTION_PATH/playbooks/host_vars/

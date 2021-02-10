@@ -16,10 +16,12 @@
   vars_prompt:
     - name: username
       prompt: "Enter your username"
+      default: username_value
       private: no
 
     - name: password
       prompt: "Enter your password"
+      default: password_value
       private: yes    
   tasks:
     - include_role:

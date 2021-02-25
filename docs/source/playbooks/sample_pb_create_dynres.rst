@@ -1,5 +1,5 @@
 .. ...........................................................................
-.. © Copyright IBM Corporation 2020                                          .
+.. © Copyright IBM Corporation 2020, 2021                                          .
 .. ...........................................................................
 
 sample_pb_create_dynres
@@ -9,7 +9,8 @@ For configuration and setup, see `Playbook Documentation`_.
 
 This `sample playbook`_ shows how to create and resume a dynamic resource using the role `sa_create_dynamic_resource`_.
 
-You are prompted for your NetView credentials during execution of the playbook.
+You are prompted for your NetView credentials during execution of the playbook. The environment variables "username_value"
+and "password_value" are taken as default values for the credentials.
 
 .. code-block:: yaml
 
@@ -23,10 +24,12 @@ You are prompted for your NetView credentials during execution of the playbook.
 	 vars_prompt:
        - name: username
          prompt: "Enter your username"
+		 default: "{{ lookup('env', 'username_value') }}"
          private: no
 
        - name: password
          prompt: "Enter your password"
+		 default: "{{ lookup('env', 'password_value') }}"
          private: yes
      tasks:
        - include_role:

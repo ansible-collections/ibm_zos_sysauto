@@ -1,10 +1,25 @@
 .. ...........................................................................
-.. © Copyright IBM Corporation 2020                                          .
+.. © Copyright IBM Corporation 2020, 2021                                          .
 .. ...........................................................................
 
 ======================
 Releases
 ======================
+
+Version 0.0.5
+=============
+
+Notes
+-----
+
+* Update not required
+* Add default values for credentials in sample playbooks.
+ 
+Availability
+------------
+
+* `Galaxy`_
+* `GitHub`_
 
 Version 0.0.4
 =============

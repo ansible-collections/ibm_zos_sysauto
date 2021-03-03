@@ -3,6 +3,7 @@
 # this group is used in the sample playbooks
 # If the hostname is changed here, please create an appropriate "host_name".yaml file under host_vars and specify host specific variables
 # as shown in example sampleHost*.yaml
-[sample]
-sampleHost1
-sampleHost2
+sample:
+  hosts:
+    sampleHost1:
+    sampleHost2:

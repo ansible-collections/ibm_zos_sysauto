@@ -14,6 +14,7 @@ Notes
 
 * Update not required
 * Add default values for credentials in sample playbooks.
+* Provide inventory sample in YAML format.
  
 Availability
 ------------

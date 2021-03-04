@@ -15,15 +15,13 @@ directory included with the installation.
 For more information about the collections installation and hierarchy, refer to the `Installation`_ documentation of this collection.
 
 The sample playbooks can be run with the ``ansible-playbook`` command with some
-modifications to the **inventory**, **ansible.cfg** and variable files.
+modifications to the **inventory** and variable files.
 
 
 Ansible Configuration
 =====================
 
 Ansible configuration file ``ansible.cfg`` can override nearly all ``ansible-playbook`` configurations. 
-
-Included in the `playbooks directory`_ is a sample `ansible.cfg`_ that can supplement ``ansible-playbook`` with a little modification.
 
 You can modify the following configuration statement to refer to your own installation path for the collection:
 
@@ -39,14 +37,15 @@ Inventory
 Ansible works with multiple managed nodes (hosts) at the same time, using a list or group of lists known as an `inventory`_.
 Once the inventory is defined, you can use `patterns`_ to select the hosts, or groups, you want Ansible to run against.
 
-Included in the `playbooks directory`_ is a sample inventory file `hosts`_ that with little modification
+Included in the `playbooks directory`_ is a sample inventory file `inventory.yaml`_ that with little modification
 can be used to manage the target z/OS systems. This inventory file should be included when running the sample playbook.
 
 .. code-block:: yaml
 
-   [sample]
-   sampleHost1
-   sampleHost2
+   sample:
+     hosts:
+       sampleHost1:
+       sampleHost2:
 
 * **sample**: An example of host grouping.
 
@@ -131,13 +130,13 @@ Use the `ansible-playbook`_ command to run a sample playbook. The command syntax
 
 .. code-block:: sh
 
-   $ ansible-playbook [-i hosts] sample_pb_*.yaml
+   $ ansible-playbook [-i INVENTORY] sample_pb_*.yaml
    
 for example:
 
 .. code-block:: sh
 
-   $ ansible-playbook -i hosts sample_pb_create_dynres.yaml
+   $ ansible-playbook -i inventory.yaml sample_pb_create_dynres.yaml
    
 
 To adjust the logging verbosity, include the ``-v`` option with `ansible-playbook`_ command. You can append more letter ``v``'s, for example, ``-v``, ``-vv``, ``-vvv``, or ``-vvvv``, to obtain more details in case a connection failed.
@@ -160,8 +159,8 @@ Each letter ``v`` increases the logging verbosity similar to the traditional log
    https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html
 .. _patterns:
    https://docs.ansible.com/ansible/latest/user_guide/intro_patterns.html#intro-patterns
-.. _hosts:
-   https://github.com/ansible-collections/ibm_zos_sysauto/blob/main/playbooks/hosts
+.. _inventory.yaml:
+   https://github.com/ansible-collections/ibm_zos_sysauto/blob/main/playbooks/inventory.yaml
 .. _host_vars:
    https://github.com/ansible-collections/ibm_zos_sysauto/blob/main/playbooks/host_vars/
 .. _vars:

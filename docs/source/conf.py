@@ -16,7 +16,7 @@
 ##############################################################################
 
 project = 'IBM Z System Automation'
-copyright = '2020, IBM'
+copyright = 'IBM Corporation 2020, 2021'
 author = 'IBM'
 
 # The full version, including alpha/beta/rc tags

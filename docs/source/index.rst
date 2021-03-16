@@ -10,7 +10,7 @@ The **IBM Z System Automation collection**, also represented as
 initiative to bring Ansible Automation to IBM Z® through the offering
 **Red Hat® Ansible Certified Content for IBM Z®**. The
 **IBM Z System Automation collection** supports operational tasks using the IBM Z System Automation Operations API 
-such as creating and deleting	 `dynamic resources`_ from a template defined in the current active policy of an IBM Z System Automation environment.
+such as creating and deleting `dynamic resources`_ from a template defined in the current active policy of an IBM Z System Automation environment.
 It interacts with IBM Z System Automation with help of its Operations REST API.
 
 Red Hat Ansible Certified Content for IBM Z
@@ -35,19 +35,46 @@ as **certified** and **IBM supported** for
 
 For guides and reference, please review the `documentation`_.
 
+
 Features
 ========
 The **IBM Z System Automation collection**, includes 
 `roles`_ and ansible-doc to
 automate tasks on z/OS.
 
-Copyright
-=========
-© Copyright IBM Corporation 2020, 2021.
+.. toctree::
+   :maxdepth: 1
+   :caption: Getting Started
 
-License
-=======
-This collection is licensed under `Apache License, Version 2.0`_.
+   requirements
+   installation
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Ansible Content
+
+   roles
+   playbooks
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Release Notes
+
+   release_notes
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Reference
+
+   community_guides
+   license   
+
+Author Information
+==================
+
+**IBM Z System Automation collection** is maintained by the IBM Z System Automation development team.
+For more information refer to `IBM Z System Automation`_.
+
 
 .. _dynamic resources:
    https://www.ibm.com/support/knowledgecenter/de/SSWRCJ_4.2.0/com.ibm.safos.doc_4.2/UserGuide/Dynamic_Resources.html
@@ -59,5 +86,5 @@ This collection is licensed under `Apache License, Version 2.0`_.
    https://ansible-collections.github.io/ibm_zos_sysauto/index.html
 .. _roles:
    https://ansible-collections.github.io/ibm_zos_sysauto/roles.html
-.. _Apache License, Version 2.0:
-   https://opensource.org/licenses/Apache-2.0
+.. _IBM Z System Automation:   
+   https://www.ibm.com/products/z-system-automation   

@@ -1,5 +1,5 @@
 IBM Z System Automation collection
-=====================================
+==================================
 
 The **IBM Z System Automation collection**, also represented as
 **ibm_zos_sysauto** in this document, is  part of the broader
@@ -19,7 +19,7 @@ automation on Z through a seamless, unified workflow orchestration with
 configuration management, provisioning, and application deployment in
 one easy-to-use platform.
 
-The **Z System Automation** is following the
+The **IBM Z System Automation** is following the
 **Red Hat® Ansible Certified Content for IBM Z®** method of distributing
 content. Collections will be developed in the open, and when content is ready
 for use it is released to
@@ -36,7 +36,7 @@ For guides and reference, please review the [documentation](https://ansible-coll
 Features
 ========
 The **IBM Z System Automation collection**, includes 
-[roles](https://github.com/ansible-collections/ibm_zos_sysauto/tree/main/roles/) and ansible-doc to
+[roles](https://ansible-collections.github.io/ibm_zos_sysauto/roles.html) and ansible-doc to
 automate tasks on z/OS.
 
 

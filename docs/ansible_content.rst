@@ -1,5 +1,5 @@
 .. ...........................................................................
-.. © Copyright IBM Corporation 2020                                          .
+.. © Copyright IBM Corporation 2020, 2021                                          .
 .. ...........................................................................
 
 =======================
@@ -21,8 +21,9 @@ It interacts with IBM Z System Automation with help of its Operations REST API.
    https://www.ibm.com/support/knowledgecenter/de/SSWRCJ_4.2.0/com.ibm.safos.doc_4.2/Integrating.html
 .. _dynamic resources:
    https://www.ibm.com/support/knowledgecenter/de/SSWRCJ_4.2.0/com.ibm.safos.doc_4.2/UserGuide/Dynamic_Resources.html   
-
-
+   
 .. toctree::
    :maxdepth: 1
-   :caption: Reference
+   :caption: Collection Content
+
+   source/roles  

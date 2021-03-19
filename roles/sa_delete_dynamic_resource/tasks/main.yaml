@@ -12,13 +12,14 @@
     method: GET
     force_basic_auth: yes
     status_code: 200
+    timeout: "{{ sa_rest_api_timeout }}"
   delegate_to: localhost
   register: resources
 
 - name: "Resource does not exist."
   debug:
     msg: "The given resource '{{ subsystem }}' for system '{{ system }}' does not exist."
-  when: (resources.json._embedded is not defined) 
+  when: (resources.json._embedded is not defined)
 
 - name: "Fail, if more than one object returned."
   fail:
@@ -34,6 +35,7 @@
     method: DELETE
     force_basic_auth: yes
     status_code: 204
+    timeout: "{{ sa_rest_api_timeout }}"
   delegate_to: localhost
   when: resources.json._embedded.resourceSummaryList[0].id is defined
 ...

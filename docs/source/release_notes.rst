@@ -15,6 +15,7 @@ Notes
 * Update not required
 * Add default values for credentials in sample playbooks.
 * Provide inventory sample in YAML format.
+* Add parameter for socket level timeout to URI tasks in both roles.
  
 Availability
 ------------

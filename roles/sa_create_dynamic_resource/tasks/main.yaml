@@ -12,6 +12,7 @@
     method: GET
     force_basic_auth: yes
     status_code: 200
+    timeout: "{{ sa_rest_api_timeout }}"
   delegate_to: localhost
   register: templates
 
@@ -41,6 +42,7 @@
       comment: "{{ comment | default(omit) }}"
       group: "{{ group | default(omit) }}"
       sdesc: "{{ sdesc | default(omit) }}"
+    timeout: "{{ sa_rest_api_timeout }}"
   delegate_to: localhost
   register: createres
   when: templates.json._embedded.templateList[0].id is defined
@@ -51,7 +53,7 @@
 - name: "Resource already exists."
   debug:
     msg: "Resource already exists."
-  when: (createres.location is undefined)  
+  when: (createres.location is undefined)
 
 - name: "resume the resource"
   uri:
@@ -62,6 +64,7 @@
     method: POST
     force_basic_auth: yes
     status_code: 202
+    timeout: "{{ sa_rest_api_timeout }}"
   delegate_to: localhost
   register: resumeres
   when: createres.location is defined

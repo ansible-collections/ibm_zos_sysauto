@@ -29,6 +29,13 @@ sa_service_protocol
   | **required**: True
   | **type**: str  
   
+sa_rest_api_timeout
+  Specifies the socket level timeout for the REST API call in seconds.
+
+  | **required**: False
+  | **type**: int  
+  | **default**: 30
+
 username
   Specifies the NetView user.
 

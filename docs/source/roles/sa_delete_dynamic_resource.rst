@@ -85,7 +85,7 @@ password
 
      
 subsystem
-  Specifies the subsystem name of the new resource.
+  Specifies the exact name (subsystem name) of the resource.
 
   The maximum length for this value is 11.
 
@@ -96,7 +96,7 @@ subsystem
 
      
 system
-  Specifies the system where the resource will be created.
+  Specifies the system for the resource.
 
   The maximum length for this value is 8.
 
@@ -140,7 +140,7 @@ Notes
 .. note::
    The given example assumes that you have an inventory file *hosts* and host vars *sampleHost.yaml* with appropriate values to identify the target IBM Z System Automation Operations REST server end points.
 
-   Also a *vars.yaml* which stores the required values for the dynamic resource that you want to create is required.
+   Also a *vars.yaml* which stores the required values for the dynamic resource that you want to delete is required.
 
 
 

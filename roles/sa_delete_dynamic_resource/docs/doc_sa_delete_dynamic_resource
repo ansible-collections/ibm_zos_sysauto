@@ -1,0 +1,84 @@
+# Copyright (c) IBM Corporation 2020,2021
+
+DOCUMENTATION = r"""
+role: sa_delete_dynamic_resource
+short_description: Role deletes a dynamic resource
+description:
+  The B(IBM Z System Automation collection) provides an Ansible role, referred to as B(sa_delete_dynamic_resource), to delete
+  a L(dynamic resource,https://www.ibm.com/support/knowledgecenter/de/SSWRCJ_4.2.0/com.ibm.safos.doc_4.2/UserGuide/Dynamic_Resources.html#concept_kmr_r4p_4jb) instance.
+author: "Anke Luedde (@lueddea)"
+options:
+  sa_service_hostname:
+    description:
+      - Specifies the IBM Z System Automation Operations REST server host name.
+    type: str
+    required: True
+  sa_service_port:
+    description:
+      - Specifies the port to which the IBM Z Automation Operations REST service is bound.
+    type: str
+    required: True
+  sa_service_protocol:
+    description:
+      - Specifies the protocol that is configured for the IBM Z Automation Operations REST server.
+    type: str
+    required: True
+    default: HTTPS
+  sa_rest_api_timeout:
+    description:
+      - Specifies the socket level timeout for the REST API call in seconds.
+    type: int
+    required: False
+    default: 30
+  username:
+    description:
+      - Specifies the NetView user.
+    type: str
+    required: True
+  password:
+    description:
+      - Specifies the password for above user.
+    type: str
+    required: True	  
+  subsystem:
+    description:
+      - Specifies the exact name (subsystem name) of the resource.
+      - The maximum length for this value is 11.
+    type: str
+    required: True	  
+  system:
+    description:
+      - Specifies the system for the resource.
+      - The maximum length for this value is 8.
+    type: str
+    required: True	  
+notes:
+    - The given example assumes that you have an inventory file I(hosts) and host vars I(sampleHost.yaml) with appropriate values
+      to identify the target IBM Z System Automation Operations REST server end points.
+    - Also a I(vars.yaml) which stores the required values for the dynamic resource that you want to delete is required.
+"""
+
+EXAMPLES = r"""
+- name: delete an SA resource
+  hosts: sampleHost
+  gather_facts: no
+  collections:
+    - ibm.ibm_zos_sysauto
+  vars_files:
+    - vars.yaml
+  vars_prompt:
+    - name: username
+      prompt: "Enter your username"
+      private: no
+    - name: password
+      prompt: "Enter your password"
+      private: yes
+  tasks:
+    - include_role:
+        name: sa_delete_dynamic_resource
+"""
+
+# Roles don't return anything, this RETURN block must be defined and remain
+# empty for doc extraction tooling to avoid an error.
+RETURN = r"""
+ """

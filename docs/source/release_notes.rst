@@ -14,7 +14,7 @@ What's New
 
 * Roles
 
-  * Add parameter for socket level timeout to URI tasks in both roles.
+  * Add parameter for socket level timeout to URI tasks in roles.
   
 * Playbooks
 

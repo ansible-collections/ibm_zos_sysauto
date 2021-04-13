@@ -46,7 +46,6 @@ After installation, the collection content will resemble this hierarchy:
    │       ├── ibm/
    │           ├── ibm_zos_sysauto/
    │               ├── docs/
-   │               ├── playbooks/
    │               ├── roles/
  
 For more information on installing collections with Ansible Galaxy, see `Installing Collections`_.

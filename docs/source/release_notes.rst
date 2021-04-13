@@ -9,19 +9,27 @@ Releases
 Version 0.0.5
 =============
 
-Notes
------
+What's New
+----------
 
-* Update not required
-* Add default values for credentials in sample playbooks.
-* Provide inventory sample in YAML format.
-* Add parameter for socket level timeout to URI tasks in both roles.
+* Roles
+
+  * Add parameter for socket level timeout to URI tasks in roles.
+  
+* Playbooks
+
+  * Add default values for credentials in sample playbooks.
+  * Provide inventory sample in YAML format.
+  * Move playbooks to `playbook repository`_.
  
 Availability
 ------------
 
 * `Galaxy`_
 * `GitHub`_
+
+.. _playbook repository:
+   https://github.com/IBM/z_ansible_collections_samples/blob/master/z_systems_automation/sysauto/README.md
 
 Version 0.0.4
 =============

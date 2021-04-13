@@ -54,7 +54,6 @@ automate tasks on z/OS.
    :caption: Ansible Content
 
    roles
-   playbooks
 
 .. toctree::
    :maxdepth: 1

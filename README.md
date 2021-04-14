@@ -5,7 +5,7 @@ The **IBM Z System Automation collection**, also represented as
 **ibm_zos_sysauto** in this document, is  part of the broader
 initiative to bring Ansible Automation to IBM Z® through the offering
 **Red Hat® Ansible Certified Content for IBM Z®**. The
-**IBM Z System Automation collection** supports operational tasks using the IBM Z System Automation Operations API such as creating and deleting	 [dynamic resources](https://www.ibm.com/support/knowledgecenter/de/SSWRCJ_4.2.0/com.ibm.safos.doc_4.2/UserGuide/Dynamic_Resources.html)
+**IBM Z System Automation collection** supports operational tasks using the IBM Z System Automation Operations API such as creating and deleting [dynamic resources](https://www.ibm.com/support/knowledgecenter/de/SSWRCJ_4.2.0/com.ibm.safos.doc_4.2/UserGuide/Dynamic_Resources.html)
 from a template defined in the current active policy of an IBM Z System Automation environment.
 It interacts with IBM Z System Automation with help of its Operations REST API.
 

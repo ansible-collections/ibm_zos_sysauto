@@ -34,7 +34,7 @@ Ansible does not need to be installed on a managed node.
 
 
 .. _controllers dependencies:
-   https://ibm.github.io/z_ansible_collections_doc/requirements/requirements_controller.html   
+   https://ibm.github.io/z_ansible_collections_doc/requirements/requirements_controller.html
 .. _IBM z/OS:
    https://www.ibm.com/support/knowledgecenter/SSLTBW_2.2.0/com.ibm.zos.v2r2/en/homepage.html
 .. _IBM Z NetView:
@@ -46,4 +46,4 @@ Ansible does not need to be installed on a managed node.
 .. _inventory:
    playbooks.html#inventory
 .. _IBM Z System Automation Operations REST server:
-   https://www.ibm.com/support/knowledgecenter/de/SSWRCJ_4.2.0/com.ibm.safos.doc_4.2/ProgrammersReference/Overview_rest_server.html   
+   https://www.ibm.com/support/knowledgecenter/de/SSWRCJ_4.2.0/com.ibm.safos.doc_4.2/ProgrammersReference/Overview_rest_server.html

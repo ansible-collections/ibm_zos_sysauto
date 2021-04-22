@@ -6,7 +6,7 @@
 Releases
 ======================
 
-Version 0.0.5
+Version 1.0.0
 =============
 
 What's New
@@ -15,16 +15,21 @@ What's New
 * Roles
 
   * Add parameter for socket level timeout to URI tasks in roles.
+
+* Collection changes
+
+  * Beginning this release, the sample playbooks previously included with the
+    collection will be made available on the `playbook repository`_.
   
 * Playbooks
 
   * Add default values for credentials in sample playbooks.
   * Provide inventory sample in YAML format.
-  * Move playbooks to `playbook repository`_.
  
 Availability
 ------------
 
+* `Automation Hub`_
 * `Galaxy`_
 * `GitHub`_
 
@@ -98,3 +103,6 @@ Availability
 
 .. _Galaxy:
    https://galaxy.ansible.com/ibm/ibm_zos_sysauto
+
+.. _Automation Hub:
+   https://www.ansible.com/products/automation-hub

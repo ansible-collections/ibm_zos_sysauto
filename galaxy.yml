@@ -7,7 +7,7 @@ namespace: ibm
 name: ibm_zos_sysauto
 
 # The version of the collection.
-version: 0.0.5
+version: 1.0.0
 
 # Collection README file
 readme: README.md
@@ -37,8 +37,7 @@ tags:
 repository: https://github.com/ansible-collections/ibm_zos_sysauto
 
 # The URL to any online docs
-# https://ibm.github.io/z_ansible_collections_doc/index.html
-documentation: https://ansible-collections.github.io/ibm_zos_sysauto
+documentation: https://ibm.github.io/z_ansible_collections_doc/index.html
 
 # The URL to the homepage of the collection/project
 homepage: https://www.ibm.com/support/knowledgecenter/SSWRCJ_4.2.0/com.ibm.safos.doc_4.2/kc_welcome-444.html

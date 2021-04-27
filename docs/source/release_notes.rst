@@ -34,7 +34,7 @@ Availability
 * `GitHub`_
 
 .. _playbook repository:
-   https://github.com/IBM/z_ansible_collections_samples/blob/master/z_systems_automation/sysauto/README.md
+   https://github.com/IBM/z_ansible_collections_samples/blob/master/README.md
 
 Version 0.0.4
 =============

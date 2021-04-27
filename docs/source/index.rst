@@ -87,7 +87,7 @@ For more information refer to `IBM Z System Automation`_.
 .. _documentation:
    https://ibm.github.io/z_ansible_collections_doc/index.html
 .. _roles:
-   https://ansible-collections.github.io/ibm_zos_sysauto/roles.html
+   https://ibm.github.io/z_ansible_collections_doc/ibm_zos_sysauto/docs/source/roles.html
 .. _samples repository:
    https://github.com/IBM/z_ansible_collections_samples/blob/master/README.md
 .. _IBM Z System Automation:   

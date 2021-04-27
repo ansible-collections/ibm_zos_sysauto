@@ -1,5 +1,5 @@
 ################################################################################
-# © Copyright IBM Corporation 2021
+# (C) Copyright IBM Corporation 2021
 ################################################################################
 # This file maintains a list of any python dependencies needed by this
 # collection to run effectively on an Ansible controller.

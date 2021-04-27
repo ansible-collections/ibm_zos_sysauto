@@ -85,7 +85,7 @@ For more information refer to `IBM Z System Automation`_.
 .. _Ansible Automation Hub:
    https://www.ansible.com/products/automation-hub
 .. _documentation:
-   https://ansible-collections.github.io/ibm_zos_sysauto/index.html
+   https://ibm.github.io/z_ansible_collections_doc/index.html
 .. _roles:
    https://ansible-collections.github.io/ibm_zos_sysauto/roles.html
 .. _samples repository:

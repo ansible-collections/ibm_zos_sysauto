@@ -1,10 +1,40 @@
 .. ...........................................................................
-.. © Copyright IBM Corporation 2020                                          .
+.. © Copyright IBM Corporation 2020, 2021                                          .
 .. ...........................................................................
 
 ======================
 Releases
 ======================
+
+Version 1.0.0
+=============
+
+What's New
+----------
+
+* Roles
+
+  * Add parameter for socket level timeout to URI tasks in roles.
+
+* Collection changes
+
+  * Beginning this release, the sample playbooks previously included with the
+    collection will be made available on the `playbook repository`_.
+  
+* Playbooks
+
+  * Add default values for credentials in sample playbooks.
+  * Provide inventory sample in YAML format.
+ 
+Availability
+------------
+
+* `Automation Hub`_
+* `Galaxy`_
+* `GitHub`_
+
+.. _playbook repository:
+   https://github.com/IBM/z_ansible_collections_samples/blob/master/README.md
 
 Version 0.0.4
 =============
@@ -73,3 +103,6 @@ Availability
 
 .. _Galaxy:
    https://galaxy.ansible.com/ibm/ibm_zos_sysauto
+
+.. _Automation Hub:
+   https://www.ansible.com/products/automation-hub

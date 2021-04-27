@@ -26,10 +26,10 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script type="text/javascript" src="_static/jquery.js"></script>
-        <script type="text/javascript" src="_static/underscore.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -94,7 +94,6 @@
 <p class="caption"><span class="caption-text">Ansible Content</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="roles.html">Roles</a></li>
-<li class="toctree-l1"><a class="reference internal" href="playbooks.html">Playbooks</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Release Notes</span></p>
 <ul>
@@ -181,8 +180,8 @@ Ansible does not need to be installed on a managed node.</p>
 <li><p><a class="reference external" href="https://www.ibm.com/support/knowledgecenter/SSWRCJ_4.2.0/com.ibm.safos.doc_4.2/kc_welcome-444.html">IBM Z System Automation</a>: V4.2 with PTF for SPE APAR OA59461 applied.</p>
 <blockquote>
 <div><p>The <a class="reference external" href="https://www.ibm.com/support/knowledgecenter/de/SSWRCJ_4.2.0/com.ibm.safos.doc_4.2/ProgrammersReference/Overview_rest_server.html">IBM Z System Automation Operations REST server</a> must be installed, configured and running on <strong>at least one</strong> z/OS system in an SA-Plex
-where the managed node runs in. Information about the IBM Z System Automation Operations REST server can be configured in the <a class="reference external" href="playbooks.html#inventory">inventory</a> <code class="docutils literal notranslate"><span class="pre">hosts</span></code> file
-or in the <code class="docutils literal notranslate"><span class="pre">vars</span></code> file, such as the host name and port number.</p>
+where the managed node runs in. Information about the IBM Z System Automation Operations REST server can be configured in the Ansible <a class="reference external" href="https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html">inventory</a>
+or in the Ansible <code class="docutils literal notranslate"><span class="pre">vars</span></code>, such as the host name and port number.</p>
 <p>The authentication information to connect to the IBM Z System Automation Operations REST server is provided when running a playbook
 or it will be prompted during playbook run.</p>
 <p>For more details about installation and configuration, refer to the <a class="reference external" href="https://www.ibm.com/support/knowledgecenter/de/SSWRCJ_4.2.0/com.ibm.safos.doc_4.2/InstallPlan/set_up_rest_server.html">Configure and Run the System Automation Operations REST Server</a> documentation.</p>
@@ -213,7 +212,7 @@ or it will be prompted during playbook run.</p>
   <div role="contentinfo">
     <p>
         
-        &copy; Copyright 2020, IBM
+        &copy; Copyright IBM Corporation 2020, 2021
 
     </p>
   </div> 

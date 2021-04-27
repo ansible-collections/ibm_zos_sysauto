@@ -26,10 +26,10 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script type="text/javascript" src="_static/jquery.js"></script>
-        <script type="text/javascript" src="_static/underscore.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -37,7 +37,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Contributing" href="community_guides.html" />
-    <link rel="prev" title="sample_pb_delete_dynres" href="playbooks/sample_pb_delete_dynres.html" /> 
+    <link rel="prev" title="sa_delete_dynamic_resource – Role deletes a dynamic resource" href="roles/sa_delete_dynamic_resource.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -90,29 +90,33 @@
 <p class="caption"><span class="caption-text">Ansible Content</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="roles.html">Roles</a></li>
-<li class="toctree-l1"><a class="reference internal" href="playbooks.html">Playbooks</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Release Notes</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Releases</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#version-0-0-4">Version 0.0.4</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#notes">Notes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#version-1-0-0">Version 1.0.0</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#what-s-new">What’s New</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#availability">Availability</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#version-0-0-4">Version 0.0.4</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#notes">Notes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Availability</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#version-0-0-3">Version 0.0.3</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id1">Notes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id2">Availability</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Notes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">Availability</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#version-0-0-2">Version 0.0.2</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id3">Notes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id4">Availability</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">Notes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">Availability</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#version-0-0-1">Version 0.0.1</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id5">Notes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id6">Availability</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">Notes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id7">Availability</a></li>
 </ul>
 </li>
 </ul>
@@ -182,6 +186,39 @@
             
   <div class="section" id="releases">
 <h1>Releases<a class="headerlink" href="#releases" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="version-1-0-0">
+<h2>Version 1.0.0<a class="headerlink" href="#version-1-0-0" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="what-s-new">
+<h3>What’s New<a class="headerlink" href="#what-s-new" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Roles</p>
+<ul>
+<li><p>Add parameter for socket level timeout to URI tasks in roles.</p></li>
+</ul>
+</li>
+<li><p>Collection changes</p>
+<ul>
+<li><p>Beginning this release, the sample playbooks previously included with the
+collection will be made available on the <a class="reference external" href="https://github.com/IBM/z_ansible_collections_samples/blob/master/README.md">playbook repository</a>.</p></li>
+</ul>
+</li>
+<li><p>Playbooks</p>
+<ul>
+<li><p>Add default values for credentials in sample playbooks.</p></li>
+<li><p>Provide inventory sample in YAML format.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="availability">
+<h3>Availability<a class="headerlink" href="#availability" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.ansible.com/products/automation-hub">Automation Hub</a></p></li>
+<li><p><a class="reference external" href="https://galaxy.ansible.com/ibm/ibm_zos_sysauto">Galaxy</a></p></li>
+<li><p><a class="reference external" href="https://github.com/ansible-collections/ibm_zos_sysauto">GitHub</a></p></li>
+</ul>
+</div>
+</div>
 <div class="section" id="version-0-0-4">
 <h2>Version 0.0.4<a class="headerlink" href="#version-0-0-4" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="notes">
@@ -192,8 +229,8 @@
 <li><p>Minor updates to the documentation.</p></li>
 </ul>
 </div>
-<div class="section" id="availability">
-<h3>Availability<a class="headerlink" href="#availability" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id1">
+<h3>Availability<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p><a class="reference external" href="https://galaxy.ansible.com/ibm/ibm_zos_sysauto">Galaxy</a></p></li>
 <li><p><a class="reference external" href="https://github.com/ansible-collections/ibm_zos_sysauto">GitHub</a></p></li>
@@ -202,15 +239,15 @@
 </div>
 <div class="section" id="version-0-0-3">
 <h2>Version 0.0.3<a class="headerlink" href="#version-0-0-3" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id1">
-<h3>Notes<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id2">
+<h3>Notes<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>Update not required</p></li>
 <li><p>Minor updates to the documentation.</p></li>
 </ul>
 </div>
-<div class="section" id="id2">
-<h3>Availability<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id3">
+<h3>Availability<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p><a class="reference external" href="https://galaxy.ansible.com/ibm/ibm_zos_sysauto">Galaxy</a></p></li>
 <li><p><a class="reference external" href="https://github.com/ansible-collections/ibm_zos_sysauto">GitHub</a></p></li>
@@ -219,15 +256,15 @@
 </div>
 <div class="section" id="version-0-0-2">
 <h2>Version 0.0.2<a class="headerlink" href="#version-0-0-2" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id3">
-<h3>Notes<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id4">
+<h3>Notes<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>Update not required</p></li>
 <li><p>Fixed broken links in the documentation.</p></li>
 </ul>
 </div>
-<div class="section" id="id4">
-<h3>Availability<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id5">
+<h3>Availability<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p><a class="reference external" href="https://galaxy.ansible.com/ibm/ibm_zos_sysauto">Galaxy</a></p></li>
 <li><p><a class="reference external" href="https://github.com/ansible-collections/ibm_zos_sysauto">GitHub</a></p></li>
@@ -236,15 +273,15 @@
 </div>
 <div class="section" id="version-0-0-1">
 <h2>Version 0.0.1<a class="headerlink" href="#version-0-0-1" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id5">
-<h3>Notes<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id6">
+<h3>Notes<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>Initial beta release of IBM Z System Automation collection, referred to as ibm_zos_sysauto
 which is part of the broader offering Red Hat® Ansible Certified Content for IBM Z.</p></li>
 </ul>
 </div>
-<div class="section" id="id6">
-<h3>Availability<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id7">
+<h3>Availability<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p><a class="reference external" href="https://galaxy.ansible.com/ibm/ibm_zos_sysauto">Galaxy</a></p></li>
 <li><p><a class="reference external" href="https://github.com/ansible-collections/ibm_zos_sysauto">GitHub</a></p></li>
@@ -264,7 +301,7 @@ which is part of the broader offering Red Hat® Ansible Certified Content for IB
         <a href="community_guides.html" class="btn btn-neutral float-right" title="Contributing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="playbooks/sample_pb_delete_dynres.html" class="btn btn-neutral float-left" title="sample_pb_delete_dynres" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="roles/sa_delete_dynamic_resource.html" class="btn btn-neutral float-left" title="sa_delete_dynamic_resource – Role deletes a dynamic resource" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -274,7 +311,7 @@ which is part of the broader offering Red Hat® Ansible Certified Content for IB
   <div role="contentinfo">
     <p>
         
-        &copy; Copyright 2020, IBM
+        &copy; Copyright IBM Corporation 2020, 2021
 
     </p>
   </div> 

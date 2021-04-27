@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Contributing &mdash; IBM Z System Automation 1.0.0 documentation</title>
+  <title>Managed node &mdash; IBM Z System Automation 1.0.0 documentation</title>
   
 
   
@@ -35,9 +35,7 @@
 
     
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="License" href="license.html" />
-    <link rel="prev" title="Releases" href="release_notes.html" /> 
+    <link rel="search" title="Search" href="search.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -96,8 +94,8 @@
 <li class="toctree-l1"><a class="reference internal" href="release_notes.html">Releases</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Reference</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Contributing</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="community_guides.html">Contributing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
 </ul>
 
@@ -145,7 +143,7 @@
     
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Contributing</li>
+      <li>Managed node</li>
     
     
 
@@ -157,13 +155,27 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="contributing">
-<h1>Contributing<a class="headerlink" href="#contributing" title="Permalink to this headline">¶</a></h1>
-<p>We are not currently accepting community contributions. However, we encourage
-you to open <a class="reference external" href="https://github.com/ansible-collections/ibm_zos_sysauto/issues">git issues</a> for bugs, comments or feature requests.</p>
-<p>Review this content periodically to learn when and how to make
-contributions in the future. For the latest information on open issues, see:
-<a class="reference external" href="https://github.com/ansible-collections/ibm_zos_sysauto/issues">git issues</a>.</p>
+  <div class="section" id="managed-node">
+<h1>Managed node<a class="headerlink" href="#managed-node" title="Permalink to this headline">¶</a></h1>
+<p>The managed z/OS® node is the host that is managed by Ansible®, as identified in
+the Ansible inventory.</p>
+<p>The <strong>IBM Z® System Automation collection</strong> requires the optional component
+called <strong>System Automation Operations REST server</strong>. This provides a RESTful API
+for many operations tasks that can be used to integrate SA operations into
+Ansible® and other products.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.ibm.com/support/knowledgecenter/SSWRCJ_4.2.0/com.ibm.safos.doc_4.2/kc_welcome-444.html">IBM Z System Automation</a>: V4.2 with PTF for SPE APAR OA59461 applied.</p></li>
+</ul>
+<p>The <a class="reference external" href="https://www.ibm.com/support/knowledgecenter/de/SSWRCJ_4.2.0/com.ibm.safos.doc_4.2/ProgrammersReference/Overview_rest_server.html">IBM Z System Automation Operations REST server</a> must be installed,
+configured and running on <strong>at least one</strong> z/OS system in an SA-Plex where an
+Ansible node is managed. Information about the IBM Z System Automation
+Operations REST server can be configured in the Ansible <a class="reference external" href="https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html">inventory</a>
+or in the Ansible <code class="docutils literal notranslate"><span class="pre">vars</span></code>, such as the host name and port number.</p>
+<p>The authentication information to connect to the IBM Z System Automation
+Operations REST server is provided when running a playbook
+or it will be prompted during playbook run.</p>
+<p>For more details about installation and configuration, refer to the
+<a class="reference external" href="https://www.ibm.com/support/knowledgecenter/de/SSWRCJ_4.2.0/com.ibm.safos.doc_4.2/InstallPlan/set_up_rest_server.html">Configure and Run the System Automation Operations REST Server</a> documentation.</p>
 </div>
 
 
@@ -171,15 +183,6 @@ contributions in the future. For the latest information on open issues, see:
            
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="license.html" class="btn btn-neutral float-right" title="License" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="release_notes.html" class="btn btn-neutral float-left" title="Releases" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
-    </div>
   
 
   <hr/>

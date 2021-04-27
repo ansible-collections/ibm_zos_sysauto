@@ -40,8 +40,10 @@ For guides and reference, please review the `documentation`_.
 Features
 ========
 The **IBM Z System Automation collection**, includes 
-`roles`_ and ansible-doc to
-automate tasks on z/OS.
+`roles`_ and ansible-doc to automate tasks on z/OS.
+
+Sample playbooks are available in our `samples repository`_
+contributed by the **Red Hat Ansible Certified Content for IBM Z** team.
 
 .. toctree::
    :maxdepth: 1
@@ -86,6 +88,8 @@ For more information refer to `IBM Z System Automation`_.
    https://ansible-collections.github.io/ibm_zos_sysauto/index.html
 .. _roles:
    https://ansible-collections.github.io/ibm_zos_sysauto/roles.html
+.. _samples repository:
+   https://github.com/IBM/z_ansible_collections_samples/blob/master/README.md
 .. _IBM Z System Automation:   
    https://www.ibm.com/products/z-system-automation
 .. _Operations REST server component:

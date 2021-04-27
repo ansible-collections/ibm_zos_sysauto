@@ -38,6 +38,9 @@ The **IBM Z System Automation collection**, includes
 [roles](https://ansible-collections.github.io/ibm_zos_sysauto/roles.html) and ansible-doc to
 automate tasks on z/OS.
 
+Sample playbooks are available in our [samples repository](https://github.com/IBM/z_ansible_collections_samples/blob/master/README.md)
+contributed by the **Red Hat Ansible Certified Content for IBM Z** team.
+
 Copyright
 =========
 © Copyright IBM Corporation 2020, 2021.

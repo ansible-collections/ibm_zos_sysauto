@@ -6,6 +6,21 @@
 Releases
 ======================
 
+Version 1.0.1-beta.1
+====================
+
+What's New
+----------
+
+* Update collection to meet new requirements.
+ 
+Availability
+------------
+
+* `Automation Hub`_
+* `Galaxy`_
+* `GitHub`_
+
 Version 1.0.0
 =============
 

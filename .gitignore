@@ -4,3 +4,5 @@
 # Sphinx documentation
 docs/build/
 docs/source/_build/
+
+changelogs/.plugin-cache.yaml

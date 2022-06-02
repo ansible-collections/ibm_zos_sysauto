@@ -43,7 +43,7 @@ contributed by the **Red Hat Ansible Certified Content for IBM Z** team.
 
 Copyright
 =========
-© Copyright IBM Corporation 2020, 2021.
+© Copyright IBM Corporation 2020, 2022.
 
 License
 =======

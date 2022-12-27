@@ -1,16 +1,20 @@
 ---
-# Copyright (c) IBM Corporation 2020
+# Copyright (c) IBM Corporation 2020, 2022
 
 # tasks file for role sa_delete_dynamic_resource
 
+- name: "Set SA Service API URL"
+  set_fact:
+    sa_service_api: "{{ sa_service_protocol }}://{{ sa_service_hostname }}:{{ sa_service_port }}/ibm/sa/v1"
+
 - name: "GET resources filtered by name (subsystem), system and dynamic=true"
   uri:
-    url: "{{ sa_service_protocol }}://{{ sa_service_hostname }}:{{ sa_service_port }}/ibm/sa/v1/resources?name={{ subsystem }}&system={{ system }}&dynamic=true"
+    url: "{{ sa_service_api }}/resources?name={{ subsystem }}&system={{ system }}&dynamic=true"
     user: "{{ username }}"
     password: "{{ password }}"
-    validate_certs: no
+    validate_certs: false
     method: GET
-    force_basic_auth: yes
+    force_basic_auth: true
     status_code: 200
     timeout: "{{ sa_rest_api_timeout }}"
   delegate_to: localhost
@@ -31,9 +35,9 @@
     url: "{{ resources.json._embedded.resourceSummaryList[0]._links.self.href }}"
     user: "{{ username }}"
     password: "{{ password }}"
-    validate_certs: no
+    validate_certs: false
     method: DELETE
-    force_basic_auth: yes
+    force_basic_auth: true
     status_code: 204
     timeout: "{{ sa_rest_api_timeout }}"
   delegate_to: localhost

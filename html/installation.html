@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Installation &mdash; IBM Z System Automation 1.0.0 documentation</title>
+  <title>Installation &mdash; IBM Z System Automation 1.0.1 documentation</title>
   
 
   
@@ -177,7 +177,7 @@ You can use the <a class="reference external" href="https://docs.ansible.com/ans
 <p>By default, the collection is installed in <code class="docutils literal notranslate"><span class="pre">~/.ansible/collections</span></code>. The output looks like this:</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>Process install dependency map
 Starting collection install process
-Installing <span class="s1">&#39;ibm.ibm_zos_sysauto:1.0.0&#39;</span> to <span class="s1">&#39;/Users/user/.ansible/collections/ansible_collections/ibm/ibm_zos_sysauto&#39;</span>
+Installing <span class="s1">&#39;ibm.ibm_zos_sysauto:1.0.1&#39;</span> to <span class="s1">&#39;/Users/user/.ansible/collections/ansible_collections/ibm/ibm_zos_sysauto&#39;</span>
 </pre></div>
 </div>
 <p>To specify the installation path, include the <code class="docutils literal notranslate"><span class="pre">-p</span></code> option with the <a class="reference external" href="https://docs.ansible.com/ansible/latest/cli/ansible-galaxy.html">ansible-galaxy</a> command:</p>
@@ -212,29 +212,29 @@ $ ansible-galaxy collection build
 </pre></div>
 </div>
 <p>The example output looks like this:</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>Created collection <span class="k">for</span> ibm.ibm_zos_sysauto at /Users/user/git/ibm/ibm_zos_sysauto/ibm-ibm_zos_sysauto-1.0.0.tar.gz
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>Created collection <span class="k">for</span> ibm.ibm_zos_sysauto at /Users/user/git/ibm/ibm_zos_sysauto/ibm-ibm_zos_sysauto-1.0.1.tar.gz
 </pre></div>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul class="simple">
 <li><p>Collection archive names will change depending on the release version.</p></li>
-<li><p>They adhere to this convention <code class="docutils literal notranslate"><span class="pre">&lt;namespace&gt;-&lt;collection&gt;-&lt;version&gt;.tar.gz</span></code>, for example, <code class="docutils literal notranslate"><span class="pre">ibm-ibm_zos_sysauto-1.0.0.tar.gz</span></code>.</p></li>
+<li><p>They adhere to this convention <code class="docutils literal notranslate"><span class="pre">&lt;namespace&gt;-&lt;collection&gt;-&lt;version&gt;.tar.gz</span></code>, for example, <code class="docutils literal notranslate"><span class="pre">ibm-ibm_zos_sysauto-1.0.1.tar.gz</span></code>.</p></li>
 </ul>
 </div>
 </li>
 <li><p>Install the locally built collection:</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>$ ansible-galaxy collection install ibm-ibm_zos_sysauto-1.0.0.tar.gz
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>$ ansible-galaxy collection install ibm-ibm_zos_sysauto-1.0.1.tar.gz
 </pre></div>
 </div>
 <p>The example output looks like this:</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>Process install dependency map
 Starting collection install process
-Installing <span class="s1">&#39;ibm.ibm_zos_sysauto:1.0.0&#39;</span> to <span class="s1">&#39;/Users/user/.ansible/collections/ansible_collections/ibm/ibm_zos_sysauto&#39;</span>
+Installing <span class="s1">&#39;ibm.ibm_zos_sysauto:1.0.1&#39;</span> to <span class="s1">&#39;/Users/user/.ansible/collections/ansible_collections/ibm/ibm_zos_sysauto&#39;</span>
 </pre></div>
 </div>
 <p>To specify the installation path, include the <code class="docutils literal notranslate"><span class="pre">-p</span></code> option with the <a class="reference external" href="https://docs.ansible.com/ansible/latest/cli/ansible-galaxy.html">ansible-galaxy</a> command:</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>$ ansible-galaxy collection install ibm-ibm_zos_sysauto-1.0.0.tar.gz -p /myAnsible/collections
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>$ ansible-galaxy collection install ibm-ibm_zos_sysauto-1.0.1.tar.gz -p /myAnsible/collections
 </pre></div>
 </div>
 </li>
@@ -263,7 +263,7 @@ Installing <span class="s1">&#39;ibm.ibm_zos_sysauto:1.0.0&#39;</span> to <span 
   <div role="contentinfo">
     <p>
         
-        &copy; Copyright IBM Corporation 2020, 2021
+        &copy; Copyright IBM Corporation 2020, 2022
 
     </p>
   </div> 

@@ -1,5 +1,5 @@
 ################################################################################
-# © Copyright IBM Corporation 2021
+# (C) Copyright IBM Corporation 2022
 ################################################################################
 # This file maintains a list of any binary dependencies needed by this
 # Collection. At this time there are no binary dependencies.

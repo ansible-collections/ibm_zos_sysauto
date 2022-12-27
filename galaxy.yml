@@ -1,4 +1,4 @@
-# Copyright (c) IBM Corporation 2020, 2021
+# Copyright (c) IBM Corporation 2020, 2022
 
 # IBM collection namespace
 namespace: ibm
@@ -7,7 +7,7 @@ namespace: ibm
 name: ibm_zos_sysauto
 
 # The version of the collection.
-version: 1.0.0
+version: 1.0.1-beta.1
 
 # Collection README file
 readme: README.md
@@ -52,3 +52,4 @@ build_ignore:
   - .gitattributes
   - '*.tar.gz'
   - docs
+  - changelogs

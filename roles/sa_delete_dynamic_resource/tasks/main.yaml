@@ -30,7 +30,7 @@
     msg: "The given resource '{{ subsystem }}' for system '{{ system }}' is not unique."
   when: (resources.json._embedded is defined and resources.json._embedded.resourceSummaryList|length > 1)
 
-- name: "delete the resource"
+- name: "Delete the resource"
   uri:
     url: "{{ resources.json._embedded.resourceSummaryList[0]._links.self.href }}"
     user: "{{ username }}"

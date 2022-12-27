@@ -25,7 +25,7 @@
     msg: "The given template '{{ templateName }}' is not unique or does not exist."
   when: (templates.json._embedded is not defined or templates.json._embedded.templateList|length != 1)
 
-- name: "create dynamic resource"
+- name: "Create dynamic resource"
   uri:
     url: "{{ sa_service_api }}/resources"
     user: "{{ username }}"
@@ -59,7 +59,7 @@
     msg: "Resource already exists."
   when: (createres.location is undefined)
 
-- name: "resume the resource"
+- name: "Resume the resource"
   uri:
     url: "{{ createres.location }}/resume"
     user: "{{ username }}"

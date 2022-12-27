@@ -32,6 +32,8 @@ tags:
   - zos_sa
   - ibm_zos_sa
   - system_automation
+  - infrastructure
+  - tools
 
 # The URL of the originating SCM repository
 repository: https://github.com/ansible-collections/ibm_zos_sysauto

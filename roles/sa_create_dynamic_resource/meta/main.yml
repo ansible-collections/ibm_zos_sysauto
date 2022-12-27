@@ -13,13 +13,17 @@ galaxy_info:
 
   license: Apache-2.0
 
-  min_ansible_version: 2.9
+  min_ansible_version: "2.9"
 
   galaxy_tags:
     - ibm
     - z
     - zos
-    - systemautomation
-    - sysauto
+    - z_os
+    - zos_sa
+    - ibm_zos_sa
+    - system_automation
+    - infrastructure
+    - tools
 
 dependencies: []

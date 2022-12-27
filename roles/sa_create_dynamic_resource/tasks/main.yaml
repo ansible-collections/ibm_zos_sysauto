@@ -1,16 +1,20 @@
 ---
-# Copyright (c) IBM Corporation 2020
+# Copyright (c) IBM Corporation 2020, 2022
 
 # tasks file for role sa_create_dynamic_resource
 
+- name: "Set SA Service API URL"
+  set_fact:
+    sa_service_api: "{{ sa_service_protocol }}://{{ sa_service_hostname }}:{{ sa_service_port }}/ibm/sa/v1"
+
 - name: "GET active template filtered by exact name"
   uri:
-    url: "{{ sa_service_protocol }}://{{ sa_service_hostname }}:{{ sa_service_port }}/ibm/sa/v1/templates?templateName={{ templateName | urlencode }}&current=true"
+    url: "{{ sa_service_api }}/templates?templateName={{ templateName | urlencode }}&current=true"
     user: "{{ username }}"
     password: "{{ password }}"
-    validate_certs: no
+    validate_certs: false
     method: GET
-    force_basic_auth: yes
+    force_basic_auth: true
     status_code: 200
     timeout: "{{ sa_rest_api_timeout }}"
   delegate_to: localhost
@@ -23,12 +27,12 @@
 
 - name: "create dynamic resource"
   uri:
-    url: "{{ sa_service_protocol }}://{{ sa_service_hostname }}:{{ sa_service_port }}/ibm/sa/v1/resources"
+    url: "{{ sa_service_api }}/resources"
     user: "{{ username }}"
     password: "{{ password }}"
-    validate_certs: no
+    validate_certs: false
     method: POST
-    force_basic_auth: yes
+    force_basic_auth: true
     status_code:
       - 201
       - 409
@@ -60,9 +64,9 @@
     url: "{{ createres.location }}/resume"
     user: "{{ username }}"
     password: "{{ password }}"
-    validate_certs: no
+    validate_certs: false
     method: POST
-    force_basic_auth: yes
+    force_basic_auth: true
     status_code: 202
     timeout: "{{ sa_rest_api_timeout }}"
   delegate_to: localhost

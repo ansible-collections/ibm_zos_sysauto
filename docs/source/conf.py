@@ -16,11 +16,11 @@
 ##############################################################################
 
 project = 'IBM Z System Automation'
-copyright = 'IBM Corporation 2020, 2021'
+copyright = 'IBM Corporation 2020, 2022'
 author = 'IBM'
 
 # The full version, including alpha/beta/rc tags
-release = '1.0.0'
+release = '1.0.1'
 
 # Disable the Copyright footer for Read the docs at the bottom of the page
 # by setting property html_show_copyright = False

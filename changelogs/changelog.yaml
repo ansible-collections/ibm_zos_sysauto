@@ -13,17 +13,17 @@ releases:
     fragments:
     - v1.0.0_summary.yml
     - v1.0.0_summary_minor.yml
-    release_date: '2022-12-22'
-  1.0.1-beta.1:
+    release_date: '2021-04-27'
+  1.0.1:
     changes:
       minor_changes:
       - Update collection to meet new requirements.
-      release_summary: "Release Date: '2022-22-12'\nThis changelog describes all changes
+      release_summary: "Release Date: '2022-22-27'\nThis changelog describes all changes
         made to this collection. The release date is the date the changelog is created.\nFor
         additional details such as required dependencies and availability review\nthe
         collections `release notes <https://ibm.github.io/z_ansible_collections_doc/ibm_zos_sysauto/docs/source/release_notes.html>`__
         \n"
     fragments:
-    - v1.0.1-beta.1_summary.yml
-    - v1.0.1-beta.1_summary_minor.yml
-    release_date: '2022-12-22'
+    - v1.0.1_summary.yml
+    - v1.0.1_summary_minor.yml
+    release_date: '2022-12-27'

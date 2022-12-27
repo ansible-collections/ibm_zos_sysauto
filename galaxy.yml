@@ -7,7 +7,7 @@ namespace: ibm
 name: ibm_zos_sysauto
 
 # The version of the collection.
-version: 1.0.1-beta.2
+version: 1.0.1
 
 # Collection README file
 readme: README.md

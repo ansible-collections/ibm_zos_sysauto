@@ -1,14 +1,14 @@
 ---
-# Copyright (c) IBM Corporation 2020, 2022
+# Copyright (c) IBM Corporation 2020, 2023
 
 # tasks file for role sa_create_dynamic_resource
 
 - name: "Set SA Service API URL"
-  set_fact:
+  ansible.builtin.set_fact:
     sa_service_api: "{{ sa_service_protocol }}://{{ sa_service_hostname }}:{{ sa_service_port }}/ibm/sa/v1"
 
 - name: "GET active template filtered by exact name"
-  uri:
+  ansible.builtin.uri:
     url: "{{ sa_service_api }}/templates?templateName={{ templateName | urlencode }}&current=true"
     user: "{{ username }}"
     password: "{{ password }}"
@@ -21,12 +21,12 @@
   register: templates
 
 - name: "Fail if template is not unique."
-  fail:
+  ansible.builtin.fail:
     msg: "The given template '{{ templateName }}' is not unique or does not exist."
   when: (templates.json._embedded is not defined or templates.json._embedded.templateList|length != 1)
 
 - name: "Create dynamic resource"
-  uri:
+  ansible.builtin.uri:
     url: "{{ sa_service_api }}/resources"
     user: "{{ username }}"
     password: "{{ password }}"
@@ -60,7 +60,7 @@
   when: (createres.location is undefined)
 
 - name: "Resume the resource"
-  uri:
+  ansible.builtin.uri:
     url: "{{ createres.location }}/resume"
     user: "{{ username }}"
     password: "{{ password }}"

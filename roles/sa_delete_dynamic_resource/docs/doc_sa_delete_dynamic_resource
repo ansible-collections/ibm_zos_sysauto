@@ -1,4 +1,4 @@
-# Copyright (c) IBM Corporation 2020,2021
+# Copyright (c) IBM Corporation 2020,2023
 
 DOCUMENTATION = r"""
 role: sa_delete_dynamic_resource
@@ -6,7 +6,7 @@ short_description: Role deletes a dynamic resource
 description:
   The B(IBM Z System Automation collection) provides an Ansible role, referred to as B(sa_delete_dynamic_resource), to delete
   a L(dynamic resource,https://www.ibm.com/support/knowledgecenter/de/SSWRCJ_4.2.0/com.ibm.safos.doc_4.2/UserGuide/Dynamic_Resources.html#concept_kmr_r4p_4jb) instance.
-author: "Anke Luedde (@lueddea)"
+author: "Bernd Jostmeyer (@bjost)"
 options:
   sa_service_hostname:
     description:

@@ -1,4 +1,4 @@
-# Copyright (c) IBM Corporation 2020,2021
+# Copyright (c) IBM Corporation 2020,2023
 
 DOCUMENTATION = r"""
 role: sa_create_dynamic_resource
@@ -6,7 +6,7 @@ short_description: Role creates and resumes a dynamic resource
 description:
   The B(IBM Z System Automation collection) provides an Ansible role, referred to as B(sa_create_dynamic_resource), to create
   and resume a new L(dynamic resource,https://www.ibm.com/support/knowledgecenter/de/SSWRCJ_4.2.0/com.ibm.safos.doc_4.2/UserGuide/Dynamic_Resources.html#concept_kmr_r4p_4jb) instance from a template.
-author: "Anke Luedde (@lueddea)"
+author: "Bernd Jostmayer (@bjost)"
 options:
   sa_service_hostname:
     description:

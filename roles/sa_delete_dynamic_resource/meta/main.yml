@@ -1,8 +1,8 @@
 ---
-# Copyright (c) IBM Corporation 2020, 2022
+# Copyright (c) IBM Corporation 2020, 2023
 
 galaxy_info:
-  author: Anke Luedde <lueddea@de.ibm.com>
+  author: Bernd Jostmeyer <bjost@de.ibm.com>
   description: Delete a dynamic resource instance from the list of automated instances in IBM Z System Automation environment.
   company: IBM
 

@@ -1,14 +1,14 @@
 ---
-# Copyright (c) IBM Corporation 2020, 2022
+# Copyright (c) IBM Corporation 2020, 2023
 
 # tasks file for role sa_delete_dynamic_resource
 
 - name: "Set SA Service API URL"
-  set_fact:
+  ansible.builtin.set_fact:
     sa_service_api: "{{ sa_service_protocol }}://{{ sa_service_hostname }}:{{ sa_service_port }}/ibm/sa/v1"
 
 - name: "GET resources filtered by name (subsystem), system and dynamic=true"
-  uri:
+  ansible.builtin.uri:
     url: "{{ sa_service_api }}/resources?name={{ subsystem }}&system={{ system }}&dynamic=true"
     user: "{{ username }}"
     password: "{{ password }}"
@@ -21,17 +21,17 @@
   register: resources
 
 - name: "Resource does not exist."
-  debug:
+  ansible.builtin.debug:
     msg: "The given resource '{{ subsystem }}' for system '{{ system }}' does not exist."
   when: (resources.json._embedded is not defined)
 
 - name: "Fail, if more than one object returned."
-  fail:
+  ansible.builtin.fail:
     msg: "The given resource '{{ subsystem }}' for system '{{ system }}' is not unique."
   when: (resources.json._embedded is defined and resources.json._embedded.resourceSummaryList|length > 1)
 
 - name: "Delete the resource"
-  uri:
+  ansible.builtin.uri:
     url: "{{ resources.json._embedded.resourceSummaryList[0]._links.self.href }}"
     user: "{{ username }}"
     password: "{{ password }}"

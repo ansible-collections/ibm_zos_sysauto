@@ -6,6 +6,21 @@
 Releases
 ======================
 
+Version 1.0.2-beta.1
+====================
+
+What's New
+----------
+
+* Transfer ownership of collection.
+ 
+Availability
+------------
+
+* `Automation Hub`_
+* `Galaxy`_
+* `GitHub`_
+
 Version 1.0.1
 ====================
 

@@ -55,7 +55,7 @@
 # or 409 and no location --> OK continue (but resume is skipped)
 # or any other error --> previous task and any further task is failing
 - name: "Resource already exists."
-  debug:
+  ansible.builtin.debug:
     msg: "Resource already exists."
   when: (createres.location is undefined)
 

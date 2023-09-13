@@ -46,6 +46,8 @@
       comment: "{{ comment | default(omit) }}"
       group: "{{ group | default(omit) }}"
       sdesc: "{{ sdesc | default(omit) }}"
+      path: "{{ path | default(omit) }}"
+      filter: "{{ filter | default(omit) }}"
     timeout: "{{ sa_rest_api_timeout }}"
   delegate_to: localhost
   register: createres

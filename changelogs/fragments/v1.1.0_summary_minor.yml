@@ -1,0 +1,3 @@
+minor_changes:
+  - Added new parameters to the role for creating new dynamic resource representing a new USS application
+  - Documentation updated

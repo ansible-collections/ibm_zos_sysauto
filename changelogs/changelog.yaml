@@ -46,6 +46,7 @@ releases:
       - Added new parameters to the role for creating new dynamic resource representing a new USS application
       - Documentation updated
       release_summary: "Release Date: '2023-09-13'\nThis changelog describes all changes
+      release_summary: "Release Date: '2023-09-12'\nThis changelog describes all changes
         made to this collection. The release date is the date the changelog is created.\nFor
         additional details such as required dependencies and availability review\nthe
         collections `release notes <https://ibm.github.io/z_ansible_collections_doc/ibm_zos_sysauto/docs/source/release_notes.html>`__
@@ -53,4 +54,4 @@ releases:
     fragments:
     - v1.1.0_summary.yml
     - v1.1.0_summary_minor.yml
-    release_date: '2023-09-13'
+    release_date: '2023-09-21'

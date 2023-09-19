@@ -34,7 +34,7 @@ For guides and reference, please review the [documentation](https://ibm.github.i
 
 Features
 ========
-The **IBM Z System Automation collection**, includes 
+The **IBM Z System Automation collection**, includes
 [roles](https://ibm.github.io/z_ansible_collections_doc/ibm_zos_sysauto/docs/source/roles.html) and ansible-doc to
 automate tasks on z/OS.
 
@@ -43,7 +43,7 @@ contributed by the **Red Hat Ansible Certified Content for IBM Z** team.
 
 Copyright
 =========
-© Copyright IBM Corporation 2020, 2022.
+© Copyright IBM Corporation 2020, 2023.
 
 License
 =======

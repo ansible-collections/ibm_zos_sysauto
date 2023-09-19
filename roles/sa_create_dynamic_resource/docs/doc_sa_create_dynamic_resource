@@ -6,7 +6,7 @@ short_description: Role creates and resumes a dynamic resource
 description:
   The B(IBM Z System Automation collection) provides an Ansible role, referred to as B(sa_create_dynamic_resource), to create
   and resume a new L(dynamic resource,https://www.ibm.com/support/knowledgecenter/de/SSWRCJ_4.2.0/com.ibm.safos.doc_4.2/UserGuide/Dynamic_Resources.html#concept_kmr_r4p_4jb) instance from a template.
-author: "Bernd Jostmayer (@bjost)"
+author: "Bernd Jostmeyer (bjost@de.ibm.com)"
 options:
   sa_service_hostname:
     description:
@@ -39,54 +39,66 @@ options:
     description:
       - Specifies the password for above user.
     type: str
-    required: True	  
+    required: True
   templateName:
-    description:  
+    description:
       - Specifies the name of the template that will be used to create the dynamic resource.
     type: str
-    required: True  
+    required: True
   subsystem:
     description:
       - Specifies the subsystem name of the new resource.
       - The maximum length for this value is 11.
     type: str
-    required: True	  
+    required: True
   system:
     description:
       - Specifies the system where the resource will be created.
       - The maximum length for this value is 8.
     type: str
-    required: True	  
+    required: True
   job:
     description:
       - Specifies the job name of the new resource.
       - The maximum length for this value is 8.
     type: str
-    required: True	  
+    required: True
   procedure:
     description:
       - Specifies the procedure name used by the new resource.
       - The maximum length for this value is 8.
     type: str
-    required: False	  
+    required: False
   comment:
-    description: 
+    description:
       - Specifies a comment to be associated with the creation of the new resource.
       - The maximum length for this value is 40.
     type: str
-    required: False	  
+    required: False
   group:
     description:
       - Specifies the automation name of the application group (APG) that will host the new resource.
       - The maximum length for this value is 11.
     type: str
-    required: False	  
+    required: False
   sdesc:
     description:
       - Specifies a short description of the new resource.
       - The maximum length for this value is 40.
     type: str
-    required: False	  
+    required: False
+  path:
+    description:
+      - Specifies the fulll qualified ZFS path to find the application to be started by this new resource.
+      - The maximum length for this value is 159.
+    type: str
+    required: False
+  filter:
+    description:
+      - Specifies an additional filter criteria to uniquely identify the USS process represented by this new resource.
+      - The maximum length for this value is 159.
+    type: str
+    required: False
 notes:
     - The given example assumes that you have an inventory file I(hosts) and host vars I(sampleHost.yaml) with appropriate values
       to identify the target IBM Z System Automation Operations REST server end points.

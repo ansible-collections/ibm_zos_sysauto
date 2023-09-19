@@ -29,7 +29,7 @@ By default, the collection is installed in ``~/.ansible/collections``. The outpu
 
    Process install dependency map
    Starting collection install process
-   Installing 'ibm.ibm_zos_sysauto:1.0.1' to '/Users/user/.ansible/collections/ansible_collections/ibm/ibm_zos_sysauto'
+   Installing 'ibm.ibm_zos_sysauto:1.1.0' to '/Users/user/.ansible/collections/ansible_collections/ibm/ibm_zos_sysauto'
 
 To specify the installation path, include the ``-p`` option with the `ansible-galaxy`_ command:
 
@@ -47,7 +47,7 @@ After installation, the collection content will resemble this hierarchy:
    │           ├── ibm_zos_sysauto/
    │               ├── docs/
    │               ├── roles/
- 
+
 For more information on installing collections with Ansible Galaxy, see `Installing Collections`_.
 
 Local Build
@@ -66,35 +66,35 @@ having to use Galaxy. Then you can use the ``ansible-galaxy collection install``
 2. Run a local build inside the collection:
 
    .. code-block:: sh
-   
+
       $ cd ibm_zos_sysauto
       $ ansible-galaxy collection build
 
    The example output looks like this:
 
    .. code-block:: sh
-   
-      Created collection for ibm.ibm_zos_sysauto at /Users/user/git/ibm/ibm_zos_sysauto/ibm-ibm_zos_sysauto-1.0.1.tar.gz
+
+      Created collection for ibm.ibm_zos_sysauto at /Users/user/git/ibm/ibm_zos_sysauto/ibm-ibm_zos_sysauto-1.1.1.tar.gz
 
    .. note::
-      
+
       * Collection archive names will change depending on the release version.
-      
-      * They adhere to this convention ``<namespace>-<collection>-<version>.tar.gz``, for example, ``ibm-ibm_zos_sysauto-1.0.1.tar.gz``.
-	  
+
+      * They adhere to this convention ``<namespace>-<collection>-<version>.tar.gz``, for example, ``ibm-ibm_zos_sysauto-1.1.0.tar.gz``.
+
 3. Install the locally built collection:
 
    .. code-block:: sh
 
-      $ ansible-galaxy collection install ibm-ibm_zos_sysauto-1.0.1.tar.gz
+      $ ansible-galaxy collection install ibm-ibm_zos_sysauto-1.1.1.tar.gz
 
    The example output looks like this:
-    
+
    .. code-block:: sh
 
       Process install dependency map
       Starting collection install process
-      Installing 'ibm.ibm_zos_sysauto:1.0.1' to '/Users/user/.ansible/collections/ansible_collections/ibm/ibm_zos_sysauto'
+      Installing 'ibm.ibm_zos_sysauto:1.1.1' to '/Users/user/.ansible/collections/ansible_collections/ibm/ibm_zos_sysauto'
 
    To specify the installation path, include the ``-p`` option with the `ansible-galaxy`_ command:
 

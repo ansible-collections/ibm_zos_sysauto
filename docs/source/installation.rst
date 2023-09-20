@@ -74,7 +74,7 @@ having to use Galaxy. Then you can use the ``ansible-galaxy collection install``
 
    .. code-block:: sh
 
-      Created collection for ibm.ibm_zos_sysauto at /Users/user/git/ibm/ibm_zos_sysauto/ibm-ibm_zos_sysauto-1.1.1.tar.gz
+      Created collection for ibm.ibm_zos_sysauto at /Users/user/git/ibm/ibm_zos_sysauto/ibm-ibm_zos_sysauto-1.1.0.tar.gz
 
    .. note::
 
@@ -86,7 +86,7 @@ having to use Galaxy. Then you can use the ``ansible-galaxy collection install``
 
    .. code-block:: sh
 
-      $ ansible-galaxy collection install ibm-ibm_zos_sysauto-1.1.1.tar.gz
+      $ ansible-galaxy collection install ibm-ibm_zos_sysauto-1.1.0.tar.gz
 
    The example output looks like this:
 
@@ -100,7 +100,7 @@ having to use Galaxy. Then you can use the ``ansible-galaxy collection install``
 
    .. code-block:: sh
 
-      $ ansible-galaxy collection install ibm-ibm_zos_sysauto-1.0.1.tar.gz -p /myAnsible/collections
+      $ ansible-galaxy collection install ibm-ibm_zos_sysauto-1.1.0.tar.gz -p /myAnsible/collections
 
 
 .. _Using Collections:

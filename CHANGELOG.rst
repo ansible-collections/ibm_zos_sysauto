@@ -4,39 +4,20 @@ IBM Z System Automation Release Notes
 
 .. contents:: Topics
 
+
 v1.1.0
 ======
 
 Release Summary
 ---------------
 
-Release Date: '2023-09-20'
-This changelog describes all changes made to this collection. The release date is the date the changelog is created.
-For additional details such as required dependencies and availability review
-the collections `release notes <https://ibm.github.io/z_ansible_collections_doc/ibm_zos_sysauto/docs/source/release_notes.html>`__
-
+With this release one is able to create dynamic resource instances representing an USS process.
 
 Minor Changes
 -------------
 
-- Ability to create dynamic resources for USS applications.
-
-
-v1.0.2-beta.1
-=============
-
-Release Summary
----------------
-
-Release Date: '2023-xx-yy'
-This changelog describes all changes made to this collection. The release date is the date the changelog is created.
-For additional details such as required dependencies and availability review
-the collections `release notes <https://ibm.github.io/z_ansible_collections_doc/ibm_zos_sysauto/docs/source/release_notes.html>`__
-
-
-Minor Changes
--------------
-
+- Added new parameters to the role for creating new dynamic resource representing a new USS application
+- Documentation updated
 - Transfer ownership of the collection.
 
 v1.0.1
@@ -48,7 +29,7 @@ Release Summary
 Release Date: '2022-22-27'
 This changelog describes all changes made to this collection. The release date is the date the changelog is created.
 For additional details such as required dependencies and availability review
-the collections `release notes <https://ibm.github.io/z_ansible_collections_doc/ibm_zos_sysauto/docs/source/release_notes.html>`__
+the collections `release notes <https://ibm.github.io/z_ansible_collections_doc/ibm_zos_sysauto/docs/source/release_notes.html>`__ 
 
 
 Minor Changes
@@ -65,7 +46,7 @@ Release Summary
 Release Date: '2021-27-04'
 This changelog describes all changes made to this collection.
 For additional details such as required dependencies and availability review
-the collections `release notes <https://ibm.github.io/z_ansible_collections_doc/ibm_zos_sysauto/docs/source/release_notes.html>`__
+the collections `release notes <https://ibm.github.io/z_ansible_collections_doc/ibm_zos_sysauto/docs/source/release_notes.html>`__ 
 
 Sample playbooks for this collection are available on the `playbook repository <https://github.com/IBM/z_ansible_collections_samples>`__.
 

@@ -20,10 +20,15 @@
   delegate_to: localhost
   register: templates
 
+- name: "Fail if template does not exist."
+  ansible.builtin.fail:
+    msg: "The given template '{{ templateName }}' does not exist."
+  when: (templates.json._embedded is not defined)
+
 - name: "Fail if template is not unique."
   ansible.builtin.fail:
-    msg: "The given template '{{ templateName }}' is not unique or does not exist."
-  when: (templates.json._embedded is not defined or templates.json._embedded.templateList|length != 1)
+    msg: "The given template '{{ templateName }}' is not unique it finds '{{ templates.json._embedded.templateList|length }}' templates."
+  when: (templates.json._embedded.templateList|length != 1)
 
 - name: "Create dynamic resource"
   ansible.builtin.uri:
@@ -46,6 +51,8 @@
       comment: "{{ comment | default(omit) }}"
       group: "{{ group | default(omit) }}"
       sdesc: "{{ sdesc | default(omit) }}"
+      path: "{{ path | default(omit) }}"
+      filter: "{{ filter | default(omit) }}"
     timeout: "{{ sa_rest_api_timeout }}"
   delegate_to: localhost
   register: createres

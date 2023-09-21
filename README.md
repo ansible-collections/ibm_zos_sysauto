@@ -5,9 +5,9 @@ The **IBM Z System Automation collection**, also represented as **ibm_zos_sysaut
 is part of the broader initiative to bring Ansible Automation to IBM Z® through the offering
 **Red Hat® Ansible Certified Content for IBM Z®**. The **IBM Z System Automation collection**
 supports operational tasks using the IBM Z System Automation Operations API
-such as creating and deleting [dynamic resources](https://www.ibm.com/support/knowledgecenter/de/SSWRCJ_4.2.0/com.ibm.safos.doc_4.2/UserGuide/Dynamic_Resources.html)
-from a template defined in the current active policy of an [IBM Z System Automation](https://www.ibm.com/products/z-system-automation) environment.
-It interacts with IBM Z System Automation with help of its [Operations REST server component](https://www.ibm.com/support/knowledgecenter/de/SSWRCJ_4.2.0/com.ibm.safos.doc_4.2/Integrating.html).
+such as creating and deleting [dynamic resources](https://www.ibm.com/docs/en/z-system-automation/4.3.0?topic=concepts-dynamic-resources) from a template defined in the current active policy of an [IBM Z System Automation](https://www.ibm.com/products/z-system-automation) environment.
+It interacts with IBM Z System Automation using the SA Operations API provided by the [SA Operations REST Server](https://www.ibm.com/docs/en/z-system-automation/4.3.0?topic=integrating-system-automation-operations-rest-server).
+
 
 Red Hat Ansible Certified Content for IBM Z
 ===========================================
@@ -34,7 +34,7 @@ For guides and reference, please review the [documentation](https://ibm.github.i
 
 Features
 ========
-The **IBM Z System Automation collection**, includes 
+The **IBM Z System Automation collection**, includes
 [roles](https://ibm.github.io/z_ansible_collections_doc/ibm_zos_sysauto/docs/source/roles.html) and ansible-doc to
 automate tasks on z/OS.
 
@@ -43,7 +43,7 @@ contributed by the **Red Hat Ansible Certified Content for IBM Z** team.
 
 Copyright
 =========
-© Copyright IBM Corporation 2020, 2022.
+© Copyright IBM Corporation 2020, 2023.
 
 License
 =======

@@ -40,3 +40,15 @@ releases:
     - v1.0.2-beta.1_summary.yml
     - v1.0.2-beta.1_summary_minor.yml
     release_date: '2023-01-19'
+  1.1.0:
+    changes:
+      minor_changes:
+      - Added new parameters to the role for creating new dynamic resource representing
+        a new USS application
+      - Documentation updated
+      release_summary: With this release one is able to create dynamic resource instances
+        representing an USS process.
+    fragments:
+    - v1.1.0_summary.yml
+    - v1.1.0_summary_minor.yml
+    release_date: '2023-09-22'

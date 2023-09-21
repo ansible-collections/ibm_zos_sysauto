@@ -1,0 +1,3 @@
+release_summary: |
+  With this release one is able to create dynamic resource instances
+  representing an USS process.

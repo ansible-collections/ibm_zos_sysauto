@@ -9,9 +9,10 @@ The **IBM Z System Automation collection**, also represented as **ibm_zos_sysaut
 is  part of the broader initiative to bring Ansible Automation to IBM Z® through the offering
 **Red Hat® Ansible Certified Content for IBM Z®**.
 
-The **IBM Z System Automation collection** supports operational tasks using the IBM Z System Automation Operations API 
+The **IBM Z System Automation collection** supports operational tasks using the IBM Z System Automation Operations API
 such as creating and deleting `dynamic resources`_ from a template defined in the current active policy of an `IBM Z System Automation`_ environment.
 It interacts with IBM Z System Automation with help of its `Operations REST server component`_.
+
 
 
 Red Hat Ansible Certified Content for IBM Z
@@ -39,7 +40,7 @@ For guides and reference, please review the `documentation`_.
 
 Features
 ========
-The **IBM Z System Automation collection**, includes 
+The **IBM Z System Automation collection**, includes
 `roles`_ and ansible-doc to automate tasks on z/OS.
 
 Sample playbooks are available in our `samples repository`_
@@ -69,7 +70,7 @@ contributed by the **Red Hat Ansible Certified Content for IBM Z** team.
    :caption: Reference
 
    community_guides
-   license   
+   license
 
 Author Information
 ==================
@@ -79,7 +80,7 @@ For more information refer to `IBM Z System Automation`_.
 
 
 .. _dynamic resources:
-   https://www.ibm.com/support/knowledgecenter/de/SSWRCJ_4.2.0/com.ibm.safos.doc_4.2/UserGuide/Dynamic_Resources.html
+   https://www.ibm.com/docs/en/z-system-automation/4.3.0?topic=concepts-dynamic-resources
 .. _Ansible Galaxy:
    https://galaxy.ansible.com/search?keywords=zos_&order_by=-relevance&deprecated=false&type=collection&page=1
 .. _Ansible Automation Hub:
@@ -90,7 +91,7 @@ For more information refer to `IBM Z System Automation`_.
    https://ibm.github.io/z_ansible_collections_doc/ibm_zos_sysauto/docs/source/roles.html
 .. _samples repository:
    https://github.com/IBM/z_ansible_collections_samples/blob/master/README.md
-.. _IBM Z System Automation:   
+.. _IBM Z System Automation:
    https://www.ibm.com/products/z-system-automation
 .. _Operations REST server component:
-   https://www.ibm.com/support/knowledgecenter/de/SSWRCJ_4.2.0/com.ibm.safos.doc_4.2/Integrating.html
+   https://www.ibm.com/docs/en/z-system-automation/4.3.0?topic=program-system-automation-operations-rest-server

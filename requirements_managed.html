@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Roles &mdash; IBM Z System Automation 1.1.0 documentation</title>
+  <title>Managed node &mdash; IBM Z System Automation 1.1.0 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -19,9 +19,7 @@
         <script src="_static/sphinx_highlight.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="sa_create_dynamic_resource – Role creates and resumes a dynamic resource" href="roles/sa_create_dynamic_resource.html" />
-    <link rel="prev" title="Installation" href="installation.html" /> 
+    <link rel="search" title="Search" href="search.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -45,12 +43,8 @@
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Ansible Content</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Roles</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="roles/sa_create_dynamic_resource.html">sa_create_dynamic_resource – Role creates and resumes a dynamic resource</a></li>
-<li class="toctree-l2"><a class="reference internal" href="roles/sa_delete_dynamic_resource.html">sa_delete_dynamic_resource – Role deletes a dynamic resource</a></li>
-</ul>
-</li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="roles.html">Roles</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Release Notes</span></p>
 <ul>
@@ -76,7 +70,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home"></a></li>
-      <li class="breadcrumb-item active">Roles</li>
+      <li class="breadcrumb-item active">Managed node</li>
 
   </ul>
   <hr/>
@@ -84,28 +78,33 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="roles">
-<h1>Roles<a class="headerlink" href="#roles" title="Permalink to this heading"></a></h1>
-<p>The <strong>IBM Z System Automation collection</strong> contains roles that can be used in a playbook to create and resume, and to delete dynamic
-resources in an environment that is automated by <a class="reference external" href="https://www.ibm.com/products/z-system-automation">IBM Z System Automation</a>. These roles greatly simplify the use of the services provided
-by the IBM Z System Automation Operations REST server in custom playbooks.</p>
-<p>The <strong>IBM Z System Automation collection</strong> provides two roles. Reference material for each role contains documentation on how to
-use certain roles in your playbook.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="roles/sa_create_dynamic_resource.html">sa_create_dynamic_resource – Role creates and resumes a dynamic resource</a></li>
-<li class="toctree-l1"><a class="reference internal" href="roles/sa_delete_dynamic_resource.html">sa_delete_dynamic_resource – Role deletes a dynamic resource</a></li>
+  <section id="managed-node">
+<h1>Managed node<a class="headerlink" href="#managed-node" title="Permalink to this heading"></a></h1>
+<p>The managed z/OS® node is the host that is managed by Ansible®, as identified in
+the Ansible inventory.</p>
+<p>The <strong>IBM Z® System Automation collection</strong> requires the optional component
+called <strong>System Automation Operations REST server</strong>. This provides a RESTful API
+for many operations tasks that can be used to integrate SA operations into
+Ansible® and other products.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.ibm.com/support/knowledgecenter/SSWRCJ_4.2.0/com.ibm.safos.doc_4.2/kc_welcome-444.html">IBM Z System Automation</a>: V4.2 with PTF for SPE APAR OA59461 applied.</p></li>
 </ul>
-</div>
+<p>The <a class="reference external" href="https://www.ibm.com/support/knowledgecenter/de/SSWRCJ_4.2.0/com.ibm.safos.doc_4.2/ProgrammersReference/Overview_rest_server.html">IBM Z System Automation Operations REST server</a> must be installed,
+configured and running on <strong>at least one</strong> z/OS system in an SA-Plex where an
+Ansible node is managed. Information about the IBM Z System Automation
+Operations REST server can be configured in the Ansible <a class="reference external" href="https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html">inventory</a>
+or in the Ansible <code class="docutils literal notranslate"><span class="pre">vars</span></code>, such as the host name and port number.</p>
+<p>The authentication information to connect to the IBM Z System Automation
+Operations REST server is provided when running a playbook
+or it will be prompted during playbook run.</p>
+<p>For more details about installation and configuration, refer to the
+<a class="reference external" href="https://www.ibm.com/support/knowledgecenter/de/SSWRCJ_4.2.0/com.ibm.safos.doc_4.2/InstallPlan/set_up_rest_server.html">Configure and Run the System Automation Operations REST Server</a> documentation.</p>
 </section>
 
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="installation.html" class="btn btn-neutral float-left" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="roles/sa_create_dynamic_resource.html" class="btn btn-neutral float-right" title="sa_create_dynamic_resource – Role creates and resumes a dynamic resource" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-    </div>
+          <footer>
 
   <hr/>
 
